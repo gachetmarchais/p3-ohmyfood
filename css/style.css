@@ -1,0 +1,64 @@
+/* organisation */
+/* colours */
+body {
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: auto;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  background-color: #579c87;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  border-bottom: 3px solid #a1c181;
+}
+#header * {
+  color: #fdcb46;
+}
+
+#footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 75px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #579c87;
+  padding-left: 40px;
+  padding-right: 100px;
+  border-top: 3px solid #a1c181;
+}
+#footer a {
+  color: #fdcb46;
+}
+
+#main .menu a {
+  box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
+}
+#main .menu a .one {
+  background-color: #fcdfdb;
+}
+#main .menu a .two {
+  background-color: #fff5fe;
+}
+#main .menu a .three {
+  background-color: #f9f9f9;
+}
+#main .menu a .four {
+  background-color: #fdfffd;
+}
+
+/*# sourceMappingURL=style.css.map */

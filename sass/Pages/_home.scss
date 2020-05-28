@@ -1,0 +1,19 @@
+﻿body {
+}
+
+
+#main {
+    .menu {
+        a {
+            @include shadow-menus;
+              
+            @each $number, $color in $background-color-menu {
+                .#{$number} {
+                    background-color: $color;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,21 @@
+﻿
+
+@import "./utils/variables.scss";
+@import "./utils/fonctions.scss";
+@import "./utils/mixins.scss";
+
+@import "./base/reset.scss";
+@import "./base/box.scss";
+@import "./base/polices.scss";
+
+@import "./components/buttons.scss";
+
+@import "./layouts/header.scss";
+@import "./layouts/tables.scss";
+@import "./layouts/footer.scss";
+
+@import "./pages/home.scss";
+@import "./pages/menu-one.scss";
+@import "./pages/menu-two.scss";
+@import "./pages/menu-three.scss";
+@import "./pages/menu-four.scss";

@@ -1,0 +1,13 @@
+{
+  "author": "",
+  "browerslist": "last 4 verisons",
+  "description": "",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "p3-ohmyfood",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d./public/css/prefixed/"
+  },
+  "version": "1.0.0"
+}

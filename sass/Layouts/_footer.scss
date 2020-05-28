@@ -1,0 +1,21 @@
+﻿body {
+}
+
+#footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background-color-green;
+    padding-left: 40px;
+    padding-right: 100px;
+    border-top: 3px solid $border-header-footer;
+
+    a {
+        color: $color-yellow;
+    }
+}
