@@ -2,3 +2,43 @@
     margin: auto;
 }
 
+#main {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: $margin-main;
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+
+        @each $number, $margin in $margin-menu {
+            &-#{$number}-block {
+                margin: $margin;
+                width: $width-menu;
+                height: $height-menu;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+
+    #soon {
+        display: flex;
+        border-radius: 20px 20px;
+        width: 400px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,2 +1,9 @@
 ﻿body {
 }
+
+.fa-music {
+    background: linear-gradient(120deg, $color-note-left 40%, $color-note-right 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}

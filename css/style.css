@@ -1,5 +1,10 @@
-/* organisation */
-/* colours */
+@charset "UTF-8";
+/* COULEURS */
+/*couleurs à modifier*/
+/*couleur automatiques*/
+/* MAP */
+/* MARGIN & PADDING */
+/* TAILLE DE MENUS */
 body {
   margin: auto;
   height: auto;
@@ -14,17 +19,86 @@ body {
   margin: auto;
 }
 
-#header {
+#main {
+  text-align: center;
+  width: 100%;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 40px 123.5px 40px;
+}
+#main .menu {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+#main .menu-one-block {
+  margin: 40px 40px 40px 40px;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main .menu-two-block {
+  margin: 40px 40px 40px 40px;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main .menu-three-block {
+  margin: 40px 40px 40px 40px;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main .menu-four-block {
+  margin: 40px 40px 40px 40px;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main #soon {
+  display: flex;
+  border-radius: 20px 20px;
+  width: 400px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+#main #soon p {
+  margin-right: 10px;
+}
+
+.fa-music {
+  background: linear-gradient(120deg, #f04e5f 40%, #f6916a 75%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#header-page {
+  display: flex;
   background-color: #579c87;
   width: 100%;
   height: 100px;
   align-items: center;
   border-bottom: 3px solid #a1c181;
+  /* à modifier en bloc de propriétés (idem footer)*/
 }
-#header * {
+#header-page * {
   color: #fdcb46;
+}
+#header-page #header {
+  text-align: center;
 }
 
 #footer {
@@ -45,20 +119,61 @@ body {
   color: #fdcb46;
 }
 
-#main .menu a {
+#main .menu-one-block {
+  background-color: #fcdfdb;
   box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
 }
-#main .menu a .one {
-  background-color: #fcdfdb;
-}
-#main .menu a .two {
+#main .menu-two-block {
   background-color: #fff5fe;
+  box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
 }
-#main .menu a .three {
+#main .menu-three-block {
   background-color: #f9f9f9;
+  box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
 }
-#main .menu a .four {
+#main .menu-four-block {
   background-color: #fdfffd;
+  box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
+}
+#main .menu-one-block h3 {
+  color: #3c1218;
+}
+#main .menu-two-block h3 {
+  color: #c77412;
+}
+#main .menu-three-block h3 {
+  color: #0887fb;
+}
+#main .menu-four-block h3 {
+  color: #72bf56;
+}
+#main .menu-one-block h2 {
+  background: #3c1218;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#main .menu-two-block h2 {
+  background: linear-gradient(170deg, #e38a12 8%, #8f5aff 35%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#main .menu-three-block h2 {
+  background: linear-gradient(to right, #0431df, 20%, #1b91fa 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#main .menu-four-block h2 {
+  background: linear-gradient(165deg, #3d9339 15%, #beff7f 55%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#main #soon {
+  color: #fdcb46;
+  background-color: #579c87;
+}
+
+#title {
+  /* identiques sur les 4 menus !!! */
 }
 
 /*# sourceMappingURL=style.css.map */

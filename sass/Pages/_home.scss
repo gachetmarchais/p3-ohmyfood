@@ -1,18 +1,34 @@
 ﻿body {
 }
 
-
 #main {
     .menu {
-        a {
-            @include shadow-menus;
-              
-            @each $number, $color in $background-color-menu {
-                .#{$number} {
-                    background-color: $color;
-                }
+
+        @each $number, $background-color in $background-color-menu {
+            &-#{$number}-block {
+                background-color: $background-color;
+                @include shadow-menus;
             }
         }
+
+        @each $number, $color in $color-menu {
+            &-#{$number}-block h3 {
+                color: $color;
+            }
+        }
+
+        @each $number, $color in $color-restaurant {
+            &-#{$number}-block h2 {
+                background: $color;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+    }
+
+    #soon {
+        color: $color-yellow;
+        background-color: $background-color-green;
     }
 }
 

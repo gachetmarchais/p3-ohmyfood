@@ -1,6 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\pages",
+    "\\sass",
+    "\\sass\\Base",
+    "\\sass\\Components",
+    "\\sass\\Layouts",
+    "\\sass\\Pages",
+    "\\sass\\Utils"
   ],
+  "SelectedNode": "\\sass\\Base\\_box.scss",
   "PreviewInSolutionExplorer": false
 }
