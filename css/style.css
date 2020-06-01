@@ -176,8 +176,29 @@ body {
   /* identiques sur les 4 menus !!! */
 }
 
-.menu-one-block {
+.menu-one-page {
   background-color: #fcdfdb;
+}
+.menu-one-page-title-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-one-page table {
+  width: 100%;
+  vertical-align: middle;
+}
+.menu-one-page table th:nth-child(1) {
+  width: 80%;
+}
+.menu-one-page table th:nth-child(2) {
+  width: 20%;
+}
+.menu-one-page table td:nth-child(1) {
+  text-align: start;
+}
+.menu-one-page table td:nth-child(2) {
+  text-align: end;
 }
 
 /*# sourceMappingURL=style.css.map */
