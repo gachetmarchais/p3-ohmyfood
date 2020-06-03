@@ -1,10 +1,67 @@
 @charset "UTF-8";
 /* COULEURS */
-/*couleurs à modifier*/
-/*couleur automatiques*/
+/* rajouter des news couleurs au besoin*/
+/*couleurs des noms des restaurants / Rajouter au besoin*/
+/* couleurs des textes dans les menus */
 /* MAP */
+/* rajouter des news menu au besoin*/
 /* MARGIN & PADDING */
+/* rajouter des news menu au besoin*/
 /* TAILLE DE MENUS */
+#main .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+#main .menu-title-one-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* en rajouter si plus de menus */
+#main .menu table .caption-one:after, #main .menu table .caption-one:before {
+  content: "";
+  width: 31.5%;
+  height: 10px;
+  background-color: blue;
+}
+
+#main .menu table .caption-two:after, #main .menu table .caption-two:before {
+  content: "";
+  width: 31.5%;
+  height: 10px;
+  background-color: blue;
+}
+
+#main .menu table .caption-three:after, #main .menu table .caption-three:before {
+  content: "";
+  width: 100px;
+  height: 10px;
+  background-color: blue;
+}
+
+#main .menu table .caption-four:after, #main .menu table .caption-four:before {
+  content: "";
+  width: 100px;
+  height: 10px;
+  background-color: blue;
+}
+
+#main .menu-title-four, #main .menu-title-three, #main .menu-title-two, #main .menu-title-one {
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+#main .menu-title-four:hover, #main .menu-title-three:hover, #main .menu-title-two:hover, #main .menu-title-one:hover {
+  transform: scale(1.15);
+}
+
 body {
   margin: auto;
   height: auto;
@@ -19,23 +76,15 @@ body {
   margin: auto;
 }
 
+/* intex.html */
 #main {
   text-align: center;
-  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 40px 40px 123.5px 40px;
 }
-#main .menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 100%;
-}
-#main .menu-one-block {
+#main .menu-page-one {
   margin: 40px 40px 40px 40px;
   width: 250px;
   height: 400px;
@@ -43,7 +92,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-#main .menu-two-block {
+#main .menu-page-two {
   margin: 40px 40px 40px 40px;
   width: 250px;
   height: 400px;
@@ -51,7 +100,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-#main .menu-three-block {
+#main .menu-page-three {
   margin: 40px 40px 40px 40px;
   width: 250px;
   height: 400px;
@@ -59,7 +108,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-#main .menu-four-block {
+#main .menu-page-four {
   margin: 40px 40px 40px 40px;
   width: 250px;
   height: 400px;
@@ -69,7 +118,7 @@ body {
 }
 #main #soon {
   display: flex;
-  border-radius: 20px 20px;
+  border-radius: 10px 10px;
   width: 400px;
   height: 50px;
   justify-content: center;
@@ -85,10 +134,14 @@ body {
   -webkit-background-clip: text;
 }
 
+#header {
+  width: 100%;
+}
+
 #header-page {
   display: flex;
   background-color: #579c87;
-  width: 100%;
+  justify-content: center;
   height: 100px;
   align-items: center;
   border-bottom: 3px solid #a1c181;
@@ -97,13 +150,15 @@ body {
 #header-page * {
   color: #fdcb46;
 }
-#header-page #header {
-  text-align: center;
-}
 
 #footer {
+  width: 100%;
+}
+
+#footer-page {
   display: flex;
   position: fixed;
+  /* ne fonctionne pas */
   bottom: 0;
   left: 0;
   width: 90%;
@@ -115,90 +170,119 @@ body {
   padding-right: 100px;
   border-top: 3px solid #a1c181;
 }
-#footer a {
+#footer-page a {
   color: #fdcb46;
 }
 
-#main .menu-one-block {
+#main .menu-page-one {
   background-color: #fcdfdb;
   box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
 }
-#main .menu-two-block {
+#main .menu-page-two {
   background-color: #fff5fe;
   box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
 }
-#main .menu-three-block {
+#main .menu-page-three {
   background-color: #f9f9f9;
   box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
 }
-#main .menu-four-block {
+#main .menu-page-four {
   background-color: #fdfffd;
   box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
 }
-#main .menu-one-block h3 {
+#main .menu-title-one h2 {
+  background: #3c1218;
+}
+#main .menu-title-two h2 {
+  background: linear-gradient(170deg, #e38a12 20%, #6e4ccc 45%);
+}
+#main .menu-title-three h2 {
+  background: linear-gradient(to right, #0431df, 20%, #1b91fa 60%);
+}
+#main .menu-title-four h2 {
+  background: linear-gradient(165deg, #3d9339 15%, #beff7f 55%);
+}
+#main .menu h2 {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#main .menu-title-one h3 {
   color: #3c1218;
 }
-#main .menu-two-block h3 {
-  color: #c77412;
+#main .menu-title-two h3 {
+  color: #c67412;
 }
-#main .menu-three-block h3 {
+#main .menu-title-three h3 {
   color: #0887fb;
 }
-#main .menu-four-block h3 {
+#main .menu-title-four h3 {
   color: #72bf56;
 }
-#main .menu-one-block h2 {
-  background: #3c1218;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-#main .menu-two-block h2 {
-  background: linear-gradient(170deg, #e38a12 8%, #8f5aff 35%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-#main .menu-three-block h2 {
-  background: linear-gradient(to right, #0431df, 20%, #1b91fa 60%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-#main .menu-four-block h2 {
-  background: linear-gradient(165deg, #3d9339 15%, #beff7f 55%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-#main #soon {
+#soon {
   color: #fdcb46;
   background-color: #579c87;
 }
 
+/* menu-n°.html */
 #title {
   /* identiques sur les 4 menus !!! */
 }
 
-.menu-one-page {
+#main .menu-one {
   background-color: #fcdfdb;
+  box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
 }
-.menu-one-page-title-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#main .menu-two {
+  background-color: #fff5fe;
+  box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
 }
-.menu-one-page table {
+#main .menu-three {
+  background-color: #f9f9f9;
+  box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
+}
+#main .menu-four {
+  background-color: #fdfffd;
+  box-shadow: -5px -5px 10px #ededed, 5px 5px 10px #ededed;
+}
+#main .menu table {
   width: 100%;
   vertical-align: middle;
+  /* à dupliquer pour chaque menus*/
 }
-.menu-one-page table th:nth-child(1) {
+#main .menu table th:nth-child(1) {
   width: 80%;
 }
-.menu-one-page table th:nth-child(2) {
+#main .menu table th:nth-child(2) {
   width: 20%;
 }
-.menu-one-page table td:nth-child(1) {
+#main .menu table td:nth-child(1) {
   text-align: start;
 }
-.menu-one-page table td:nth-child(2) {
+#main .menu table td:nth-child(2) {
   text-align: end;
+}
+#main .menu table caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main .menu-table-one {
+  color: #3c1218;
+}
+#main .menu-table-two table:nth-child(1) {
+  color: #c67412;
+}
+#main .menu-table-two table:nth-child(2) {
+  color: #a56799;
+}
+#main .menu-table-two table:nth-child(3) {
+  color: #6e4ccc;
+}
+#main .menu-table-three {
+  color: #000000;
+}
+#main .menu-table-four {
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

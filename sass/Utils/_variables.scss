@@ -3,21 +3,21 @@
 
 /* COULEURS */
 
-    /*couleurs à modifier*/
+    /* rajouter des news couleurs au besoin*/
 $background-color-menu-one: #fcdfdb;
 $background-color-menu-two: #fff5fe;
 $background-color-menu-three: #f9f9f9;
 $background-color-menu-four: #fdfffd;
 $background-color-green: #579c87;
-
+        
 $color-menu-one: #3c1218;
-$color-menu-two: #c77412;
+$color-menu-two: #c67412;
 $color-menu-three: #0887fb;
 $color-menu-four: #72bf56;
 $color-yellow: #fdcb46;
 
 $color-two-left: #e38a12;
-$color-two-right: #8f5aff;
+$color-two-right: #6e4ccc;
 $color-three-left: #0431df;
 $color-three-right: #1b91fa;
 $color-four-left: #3d9339;
@@ -25,33 +25,37 @@ $color-four-right: #beff7f;
 $color-note-left: #f04e5f;
 $color-note-right: #f6916a;
 
+
+
 $shadow-menus: #ededed;
 $border-header-footer: #a1c181; 
 
-$color-one: #3c1218;
-
-    /*couleur automatiques*/
-$color-two: linear-gradient(170deg, $color-two-left 8%, $color-two-right 35%);
+    /*couleurs des noms des restaurants / Rajouter au besoin*/
+$color-one: #3c1218;    
+$color-two: linear-gradient(170deg, $color-two-left 20%, $color-two-right 45%);
 $color-three: linear-gradient(to right, $color-three-left, 20%, $color-three-right 60%); 
 $color-four: linear-gradient(165deg, $color-four-left 15%, $color-four-right 55%);   
 
+    /* couleurs des textes dans les menus */
+$color-text-one: $color-one;
+$color-text-two-caption-first: $color-menu-two;
+$color-text-two-caption-second: #a56799;
+$color-text-two-caption-third: $color-two-right;
+$color-text-three: #000000;
+$color-text-four: #000000;
 
 /* MAP */
+/* rajouter des news menu au besoin*/
 $background-color-menu: (one: $background-color-menu-one, two: $background-color-menu-two, three: $background-color-menu-three, four: $background-color-menu-four);
 $color-menu: (one:$color-menu-one, two:$color-menu-two, three:$color-menu-three, four:$color-menu-four);
 $color-restaurant: (one:$color-one, two:$color-two, three:$color-three, four:$color-four);
 
 
 /* MARGIN & PADDING */
-$margin-one: 40px 40px 40px 40px;
-$margin-two: 40px 40px 40px 40px;
-$margin-three: 40px 40px 40px 40px;
-$margin-four: 40px 40px 40px 40px;
-
+$margin: 40px 40px 40px 40px;
 $margin-main: 40px 40px 123.5px 40px;
-
-
-$margin-menu: (one: $margin-one, two: $margin-two, three: $margin-three, four: $margin-four);
+    /* rajouter des news menu au besoin*/
+$margin-menu: (one: $margin, two: $margin, three: $margin, four: $margin); 
 
 /* TAILLE DE MENUS */
 $width-menu: 250px;

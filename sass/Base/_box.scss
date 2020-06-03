@@ -1,25 +1,20 @@
 ﻿body {
     margin: auto;
 }
-
+    /* intex.html */
 #main {
     text-align: center;
-    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: $margin-main;
 
     .menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        width: 100%;
+        @extend %menu-typography;
+
 
         @each $number, $margin in $margin-menu {
-            &-#{$number}-block {
+            &-page-#{$number} {
                 margin: $margin;
                 width: $width-menu;
                 height: $height-menu;
@@ -32,13 +27,16 @@
 
     #soon {
         display: flex;
-        border-radius: 20px 20px;
+        border-radius: 10px 10px;
         width: 400px;
         height: 50px;
         justify-content: center;
         align-items: center;
+
         p {
             margin-right: 10px;
         }
     }
 }
+
+   

@@ -3,6 +3,7 @@
 @import "./utils/variables.scss";
 @import "./utils/fonctions.scss";
 @import "./utils/mixins.scss";
+@import "./utils/placeholders.scss";
 
 @import "./base/reset.scss";
 @import "./base/box.scss";
@@ -15,6 +16,7 @@
 @import "./layouts/footer.scss";
 
 @import "./pages/home.scss";
+@import "./pages/menus.scss";
 @import "./pages/menu-one.scss";
 @import "./pages/menu-two.scss";
 @import "./pages/menu-three.scss";

@@ -5,31 +5,52 @@
     .menu {
 
         @each $number, $background-color in $background-color-menu {
-            &-#{$number}-block {
+            &-page-#{$number} {
                 background-color: $background-color;
                 @include shadow-menus;
             }
         }
 
+        @each $number, $color in $color-restaurant {
+            &-title-#{$number} h2 {
+                background: $color;
+            }
+        }
+
+        h2 {
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
         @each $number, $color in $color-menu {
-            &-#{$number}-block h3 {
+            &-title-#{$number} h3 {
                 color: $color;
             }
         }
 
-        @each $number, $color in $color-restaurant {
-            &-#{$number}-block h2 {
-                background: $color;
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
-            }
+        &-title-one {
+            @extend %animation-menu-title
+        }
+
+        &-title-two {
+            @extend %animation-menu-title
+        }
+
+        &-title-three {
+            @extend %animation-menu-title
+        }
+
+        &-title-four {
+            @extend %animation-menu-title
         }
     }
-
-    #soon {
-        color: $color-yellow;
-        background-color: $background-color-green;
-    }
 }
+
+
+#soon {
+    color: $color-yellow;
+    background-color: $background-color-green;
+}
+
 
 

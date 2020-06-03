@@ -1,0 +1,51 @@
+﻿body {
+}
+%menu-typography{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+text-align: center;
+align-items: center;
+width: 100%;
+}
+
+%menu-title-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    /* en rajouter si plus de menus */
+%beforeafter-caption-one {
+    content: "";
+    width: 31.5%;
+    height: 10px;
+    background-color: blue;
+}
+%beforeafter-caption-two {
+    content: "";
+    width: 31.5%;
+    height: 10px;
+    background-color: blue;
+}
+%beforeafter-caption-three {
+    content: "";
+    width: 100px;
+    height: 10px;
+    background-color: blue;
+}
+%beforeafter-caption-four {
+    content: "";
+    width: 100px;
+    height: 10px;
+    background-color: blue;
+}
+
+%animation-menu-title {
+    cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+}

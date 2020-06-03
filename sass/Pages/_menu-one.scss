@@ -4,41 +4,7 @@
 
 
 
-#title { /* identiques sur les 4 menus !!! */
-  
-}
-.menu-one-page {
-    background-color: $background-color-menu-one;
 
-    &-title {
-        &-bottom {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-
-    table {
-        width: 100%;
-        vertical-align: middle;
-
-        th:nth-child(1) {
-            width: 80%;
-        }
-
-        th:nth-child(2) {
-            width: 20%;
-        }
-
-        td:nth-child(1) {
-            text-align: start;
-        }
-
-        td:nth-child(2) {
-            text-align: end;
-        }
-    }
-}
 
 
 

@@ -1,9 +1,13 @@
 ﻿body {
 }
-
 #footer {
+    width: 100%;
+
+}
+
+#footer-page {
     display: flex;
-    position: fixed;
+    position: fixed; /* ne fonctionne pas */
     bottom: 0;
     left: 0;
     width: 90%;
@@ -13,7 +17,8 @@
     background-color: $background-color-green;
     padding-left: 40px;
     padding-right: 100px;
-    border-top: 3px solid $border-header-footer; 
+    border-top: 3px solid $border-header-footer;
+
     a {
         color: $color-yellow;
     }

@@ -1,0 +1,111 @@
+﻿body {
+}
+/* menu-n°.html */
+
+#title { /* identiques sur les 4 menus !!! */
+}
+
+#main {
+    .menu {
+        @each $number, $background-color in $background-color-menu {
+            &-#{$number} {
+                background-color: $background-color;
+                @include shadow-menus;
+            }
+        }
+
+        &-title-one-bottom {
+            @extend %menu-title-bottom;
+        }
+
+        table {
+            width: 100%;
+            vertical-align: middle;
+
+            th:nth-child(1) {
+                width: 80%;
+            }
+
+            th:nth-child(2) {
+                width: 20%;
+            }
+
+            td:nth-child(1) {
+                text-align: start;
+            }
+
+            td:nth-child(2) {
+                text-align: end;
+            }
+
+            caption {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            /* à dupliquer pour chaque menus*/
+            .caption-one:before {
+                @extend %beforeafter-caption-one
+            }
+
+            .caption-one:after {
+                @extend %beforeafter-caption-one
+            }
+
+            .caption-two:before {
+                @extend %beforeafter-caption-two
+            }
+
+            .caption-two:after {
+                @extend %beforeafter-caption-two
+            }
+
+            .caption-three:before {
+                @extend %beforeafter-caption-three
+            }
+
+            .caption-three:after {
+                @extend %beforeafter-caption-three
+            }
+
+            .caption-four:before {
+                @extend %beforeafter-caption-four
+            }
+
+            .caption-four:after {
+                @extend %beforeafter-caption-four
+            }
+
+            h3 {
+            }
+        }
+
+        &-table {
+            &-one {
+                color: $color-text-one;
+            }
+
+            &-two {
+                table:nth-child(1) {
+                    color: $color-text-two-caption-first;
+                }
+
+                table:nth-child(2) {
+                    color: $color-text-two-caption-second;
+                }
+
+                table:nth-child(3) {
+                    color: $color-text-two-caption-third;
+                }
+            }
+
+            &-three {
+                color: $color-text-three;
+            }
+
+            &-four {
+                color: $color-text-four;
+            }
+        }
+    }
+}

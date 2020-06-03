@@ -1,17 +1,18 @@
 ﻿body {
+ 
+}
 
+#header {
+    width: 100%;
 }
 #header-page {
     display: flex;
     background-color: $background-color-green;
-    width: 100%;
+    justify-content: center;
     height: 100px;
     align-items: center;
     border-bottom: 3px solid $border-header-footer; /* à modifier en bloc de propriétés (idem footer)*/
     * {
         color: $color-yellow;
-    }
-    #header {
-       text-align: center;
     }
 }
