@@ -1,17 +1,16 @@
-﻿body {
- 
-}
+﻿
 
 #header {
+    height: $height-header;
     width: 100%;
 }
 #header-page {
     display: flex;
     background-color: $background-color-green;
     justify-content: center;
-    height: 100px;
+    height: $height-header-page;
     align-items: center;
-    border-bottom: 3px solid $border-header-footer; /* à modifier en bloc de propriétés (idem footer)*/
+    border-bottom: $border solid $border-header-footer; /* à modifier en bloc de propriétés (idem footer)*/
     * {
         color: $color-yellow;
     }

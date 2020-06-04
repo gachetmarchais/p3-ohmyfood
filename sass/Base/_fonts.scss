@@ -1,0 +1,60 @@
+﻿#header-page{
+    @extend %ohmyfood;
+}
+#footer-page {
+    @extend %footer-page
+}
+#soon {
+    @extend %soon;
+}
+.menu-title-one {
+    @extend %fonts-menu-title-one;
+}
+
+.menu-table-one {
+    @extend %fonts-menu-table-one;
+}
+
+.menu-title-two {
+    @extend %fonts-menu-title-two;
+}
+
+.menu-table-two {
+    @extend %fonts-menu-table-two;
+}
+
+.menu-title-three {
+    @extend %fonts-menu-title-three;
+}
+
+.menu-table-three {
+    @extend %fonts-menu-table-three;
+}
+
+.menu-title-four {
+    @extend %fonts-menu-title-four;
+}
+
+.menu-table-four {
+    @extend %fonts-menu-table-four;
+}
+
+#main > h1{
+    @extend %title;
+}
+#soon {
+    &-point > div {
+        visibility: hidden;
+        animation: fadein 2s;
+
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

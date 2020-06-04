@@ -39,44 +39,48 @@
             }
 
             caption {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
             }
             /* à dupliquer pour chaque menus*/
             .caption-one:before {
-                @extend %beforeafter-caption-one
+                @extend %beforeafter-caption-one;
             }
 
             .caption-one:after {
-                @extend %beforeafter-caption-one
+                @extend %beforeafter-caption-one;
+                background-color: $background-color-caption-one;
             }
 
             .caption-two:before {
-                @extend %beforeafter-caption-two
+                @extend %beforeafter-caption-two;
             }
 
             .caption-two:after {
-                @extend %beforeafter-caption-two
+                @extend %beforeafter-caption-two;
             }
 
             .caption-three:before {
-                @extend %beforeafter-caption-three
+                @extend %beforeafter-caption-three;
+                background-color: $background-color-caption-three-first; /*à modifier 1er 2eme 3eme*/
             }
 
             .caption-three:after {
-                @extend %beforeafter-caption-three
+                @extend %beforeafter-caption-three;
+                background-color: $background-color-caption-three-first; /*à modifier 1er 2eme 3eme*/
             }
 
             .caption-four:before {
-                @extend %beforeafter-caption-four
+                @extend %beforeafter-caption-four;
+                background-color: $background-color-caption-four-before; /* àmodifier le dégradé */
             }
 
             .caption-four:after {
-                @extend %beforeafter-caption-four
+                @extend %beforeafter-caption-four;  
+                background-color: $background-color-caption-four-after; /* àmodifier le dégradé */
             }
 
             h3 {
+                width: 33%;
+                display: inline-block;
             }
         }
 

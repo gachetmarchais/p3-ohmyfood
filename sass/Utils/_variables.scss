@@ -18,6 +18,7 @@ $color-yellow: #fdcb46;
 
 $color-two-left: #e38a12;
 $color-two-right: #6e4ccc;
+$color-two-middle:#a56799 ;
 $color-three-left: #0431df;
 $color-three-right: #1b91fa;
 $color-four-left: #3d9339;
@@ -39,11 +40,21 @@ $color-four: linear-gradient(165deg, $color-four-left 15%, $color-four-right 55%
     /* couleurs des textes dans les menus */
 $color-text-one: $color-one;
 $color-text-two-caption-first: $color-menu-two;
-$color-text-two-caption-second: #a56799;
+$color-text-two-caption-second: $color-two-middle;
 $color-text-two-caption-third: $color-two-right;
 $color-text-three: #000000;
 $color-text-four: #000000;
 
+/* couleurs des traits dans les menus  */ 
+$background-color-caption-one: $color-menu-one;
+$background-color-caption-two-first: $color-menu-two;
+$background-color-caption-two-second: $color-two-middle;
+$background-color-caption-two-third: $color-two-right;
+$background-color-caption-three-first: #0228dd;
+$background-color-caption-three-second: #0670f3;
+$background-color-caption-three-third: #229df9;
+$background-color-caption-four-before: linear-gradient(to left, $color-four-left 15%, $color-four-right 55%);
+$background-color-caption-four-after: linear-gradient(to right, $color-four-left 15%, $color-four-right 55%);
 /* MAP */
 /* rajouter des news menu au besoin*/
 $background-color-menu: (one: $background-color-menu-one, two: $background-color-menu-two, three: $background-color-menu-three, four: $background-color-menu-four);
@@ -52,12 +63,23 @@ $color-restaurant: (one:$color-one, two:$color-two, three:$color-three, four:$co
 
 
 /* MARGIN & PADDING */
-$margin: 40px 40px 40px 40px;
-$margin-main: 40px 40px 123.5px 40px;
+$margin: 30px 30px 30px 30px;
+$margin-main: 30px 30px 150px 30px;
+$margin-soon: 30px;
     /* rajouter des news menu au besoin*/
 $margin-menu: (one: $margin, two: $margin, three: $margin, four: $margin); 
 
-/* TAILLE DE MENUS */
-$width-menu: 250px;
-$height-menu: 400px;
+/* DIMENSIONS */
+$width-menu: 36%;
+$height-menu: 33rem;
 
+$height-soon: 5rem;
+$width-soon: 44%;
+
+
+
+$height-header: 10rem;
+$height-footer: 6.6rem;
+$border: 0.3rem;
+$height-header-page: ($height-header)-($border);
+$height-footer-page: ($height-footer)-($border);

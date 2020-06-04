@@ -28,11 +28,12 @@
     #soon {
         display: flex;
         border-radius: 10px 10px;
-        width: 400px;
-        height: 50px;
+        width: $width-soon;
+        height: $height-soon;
         justify-content: center;
         align-items: center;
 
+        margin: $margin-soon;
         p {
             margin-right: 10px;
         }

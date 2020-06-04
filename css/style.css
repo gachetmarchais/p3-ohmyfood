@@ -3,11 +3,12 @@
 /* rajouter des news couleurs au besoin*/
 /*couleurs des noms des restaurants / Rajouter au besoin*/
 /* couleurs des textes dans les menus */
+/* couleurs des traits dans les menus  */
 /* MAP */
 /* rajouter des news menu au besoin*/
 /* MARGIN & PADDING */
 /* rajouter des news menu au besoin*/
-/* TAILLE DE MENUS */
+/* DIMENSIONS */
 #main .menu {
   display: flex;
   flex-wrap: wrap;
@@ -26,30 +27,32 @@
 /* en rajouter si plus de menus */
 #main .menu table .caption-one:after, #main .menu table .caption-one:before {
   content: "";
-  width: 31.5%;
-  height: 10px;
-  background-color: blue;
+  width: 33%;
+  height: 5px;
+  display: inline-block;
 }
 
 #main .menu table .caption-two:after, #main .menu table .caption-two:before {
   content: "";
-  width: 31.5%;
-  height: 10px;
-  background-color: blue;
+  width: 33%;
+  height: 5px;
+  background-color: #c67412;
+  /*mettre une condition */
+  display: inline-block;
 }
 
 #main .menu table .caption-three:after, #main .menu table .caption-three:before {
   content: "";
-  width: 100px;
-  height: 10px;
-  background-color: blue;
+  width: 33%;
+  height: 5px;
+  display: inline-block;
 }
 
 #main .menu table .caption-four:after, #main .menu table .caption-four:before {
   content: "";
-  width: 100px;
-  height: 10px;
-  background-color: blue;
+  width: 33%;
+  height: 5px;
+  display: inline-block;
 }
 
 #main .menu-title-four, #main .menu-title-three, #main .menu-title-two, #main .menu-title-one {
@@ -62,9 +65,86 @@
   transform: scale(1.15);
 }
 
+/* POLICES */
+.menu-title-one {
+  font-family: "Devonshire", cursive;
+}
+
+.menu-table-one {
+  font-family: calliope-mvb, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.menu-title-two {
+  font-family: "Croissant One", cursive;
+}
+
+.menu-table-two {
+  font-family: noto-serif, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.menu-title-three {
+  font-family: "Dancing Script", cursive;
+}
+
+.menu-table-three {
+  font-family: calliope-mvb, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.menu-title-four {
+  font-family: "Kaushan Script", cursive;
+}
+
+.menu-table-four {
+  font-family: calliope-mvb, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+#header-page {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+#header-page {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: -2px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#soon {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0px;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+#footer-page {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0px;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+#main > h1 {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
 body {
-  margin: auto;
-  height: auto;
+  margin: 0;
   width: 100%;
 }
 
@@ -82,36 +162,36 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 40px 40px 123.5px 40px;
+  margin: 30px 30px 150px 30px;
 }
 #main .menu-page-one {
-  margin: 40px 40px 40px 40px;
-  width: 250px;
-  height: 400px;
+  margin: 30px 30px 30px 30px;
+  width: 36%;
+  height: 33rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #main .menu-page-two {
-  margin: 40px 40px 40px 40px;
-  width: 250px;
-  height: 400px;
+  margin: 30px 30px 30px 30px;
+  width: 36%;
+  height: 33rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #main .menu-page-three {
-  margin: 40px 40px 40px 40px;
-  width: 250px;
-  height: 400px;
+  margin: 30px 30px 30px 30px;
+  width: 36%;
+  height: 33rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #main .menu-page-four {
-  margin: 40px 40px 40px 40px;
-  width: 250px;
-  height: 400px;
+  margin: 30px 30px 30px 30px;
+  width: 36%;
+  height: 33rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,15 +199,29 @@ body {
 #main #soon {
   display: flex;
   border-radius: 10px 10px;
-  width: 400px;
-  height: 50px;
+  width: 44%;
+  height: 5rem;
   justify-content: center;
   align-items: center;
+  margin: 30px;
 }
 #main #soon p {
   margin-right: 10px;
 }
 
+#soon-point > div {
+  visibility: hidden;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .fa-music {
   background: linear-gradient(120deg, #f04e5f 40%, #f6916a 75%);
   -webkit-text-fill-color: transparent;
@@ -135,6 +229,7 @@ body {
 }
 
 #header {
+  height: 10rem;
   width: 100%;
 }
 
@@ -142,9 +237,9 @@ body {
   display: flex;
   background-color: #579c87;
   justify-content: center;
-  height: 100px;
+  height: 9.7rem;
   align-items: center;
-  border-bottom: 3px solid #a1c181;
+  border-bottom: 0.3rem solid #a1c181;
   /* à modifier en bloc de propriétés (idem footer)*/
 }
 #header-page * {
@@ -152,23 +247,21 @@ body {
 }
 
 #footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
   width: 100%;
 }
 
 #footer-page {
   display: flex;
-  position: fixed;
-  /* ne fonctionne pas */
-  bottom: 0;
-  left: 0;
-  width: 90%;
-  height: 75px;
+  height: 6.6rem;
   align-items: center;
   justify-content: space-between;
   background-color: #579c87;
   padding-left: 40px;
-  padding-right: 100px;
-  border-top: 3px solid #a1c181;
+  padding-right: 40px;
+  border-top: 0.3rem solid #a1c181;
 }
 #footer-page a {
   color: #fdcb46;
@@ -261,10 +354,28 @@ body {
 #main .menu table td:nth-child(2) {
   text-align: end;
 }
-#main .menu table caption {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#main .menu table .caption-one:after {
+  background-color: #3c1218;
+}
+#main .menu table .caption-three:before {
+  background-color: #0228dd;
+  /*à modifier 1er 2eme 3eme*/
+}
+#main .menu table .caption-three:after {
+  background-color: #0228dd;
+  /*à modifier 1er 2eme 3eme*/
+}
+#main .menu table .caption-four:before {
+  background-color: linear-gradient(to left, #3d9339 15%, #beff7f 55%);
+  /* àmodifier le dégradé */
+}
+#main .menu table .caption-four:after {
+  background-color: linear-gradient(to right, #3d9339 15%, #beff7f 55%);
+  /* àmodifier le dégradé */
+}
+#main .menu table h3 {
+  width: 33%;
+  display: inline-block;
 }
 #main .menu-table-one {
   color: #3c1218;

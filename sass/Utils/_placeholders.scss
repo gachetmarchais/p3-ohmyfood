@@ -17,27 +17,28 @@ width: 100%;
     /* en rajouter si plus de menus */
 %beforeafter-caption-one {
     content: "";
-    width: 31.5%;
-    height: 10px;
-    background-color: blue;
+    width: 33%;
+    height: 5px;
+    display: inline-block;
 }
 %beforeafter-caption-two {
     content: "";
-    width: 31.5%;
-    height: 10px;
-    background-color: blue;
+    width: 33%;
+    height: 5px;
+    background-color: $background-color-caption-two-first; /*mettre une condition */
+    display: inline-block;
 }
 %beforeafter-caption-three {
     content: "";
-    width: 100px;
-    height: 10px;
-    background-color: blue;
+    width: 33%;
+    height: 5px;
+    display: inline-block;
 }
 %beforeafter-caption-four {
     content: "";
-    width: 100px;
-    height: 10px;
-    background-color: blue;
+    width: 33%;
+    height: 5px;
+    display: inline-block;
 }
 
 %animation-menu-title {
@@ -48,4 +49,76 @@ width: 100%;
     &:hover {
         transform: scale(1.15);
     }
+}
+    /* POLICES */
+
+
+%fonts-menu-title-one {
+    font-family: 'Devonshire', cursive;
+}
+
+%fonts-menu-table-one {
+    font-family: calliope-mvb,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+%fonts-menu-title-two {
+    font-family: 'Croissant One', cursive;
+}
+%fonts-menu-table-two {
+    font-family: noto-serif, serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+%fonts-menu-title-three {
+    font-family: 'Dancing Script', cursive;
+}
+%fonts-menu-table-three {
+    font-family: calliope-mvb,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+%fonts-menu-title-four {
+    font-family: 'Kaushan Script', cursive;
+}
+
+%fonts-menu-table-four {
+    font-family: calliope-mvb,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+%ohmyfood {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: -2px;
+    font-weight: bold;    
+}
+%ohmyfood {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: -2px;
+    font-weight: bold;
+    font-size: 30px;
+}
+%soon {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-size: 28px;
+}
+%footer-page {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-size: 24px;
+}
+%title {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 28px;
 }
