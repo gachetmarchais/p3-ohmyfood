@@ -42,19 +42,4 @@
 #main > h1{
     @extend %title;
 }
-#soon {
-    &-point > div {
-        visibility: hidden;
-        animation: fadein 2s;
 
-    }
-}
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}

@@ -41,6 +41,7 @@ width: 100%;
     display: inline-block;
 }
 
+    /* ANIMATIONS */
 %animation-menu-title {
     cursor: pointer;
     transform: scale(1);
@@ -48,8 +49,12 @@ width: 100%;
     transition-duration: 1000ms;
     &:hover {
         transform: scale(1.15);
+        opacity: 0.5;
     }
 }
+
+
+
     /* POLICES */
 
 
