@@ -20,12 +20,12 @@ width: 100%;
     width: 33%;
     height: 5px;
     display: inline-block;
+    background-color: $background-color-caption-one;
 }
 %beforeafter-caption-two {
     content: "";
     width: 33%;
     height: 5px;
-    background-color: $background-color-caption-two-first; /*mettre une condition */
     display: inline-block;
 }
 %beforeafter-caption-three {

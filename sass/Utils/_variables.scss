@@ -26,8 +26,6 @@ $color-four-right: #beff7f;
 $color-note-left: #f04e5f;
 $color-note-right: #f6916a;
 
-
-
 $shadow-menus: #ededed;
 $border-header-footer: #a1c181; 
 
@@ -45,7 +43,7 @@ $color-text-two-caption-third: $color-two-right;
 $color-text-three: #000000;
 $color-text-four: #000000;
 
-/* couleurs des traits dans les menus  */ 
+    /* couleurs des traits dans les menus  */ 
 $background-color-caption-one: $color-menu-one;
 $background-color-caption-two-first: $color-menu-two;
 $background-color-caption-two-second: $color-two-middle;
@@ -53,33 +51,36 @@ $background-color-caption-two-third: $color-two-right;
 $background-color-caption-three-first: #0228dd;
 $background-color-caption-three-second: #0670f3;
 $background-color-caption-three-third: #229df9;
-$background-color-caption-four-before: linear-gradient(to left, $color-four-left 15%, $color-four-right 55%);
-$background-color-caption-four-after: linear-gradient(to right, $color-four-left 15%, $color-four-right 55%);
+$background-color-caption-four-before: linear-gradient(to right, $color-four-left 10%, $color-four-right 95%);
+$background-color-caption-four-after: linear-gradient(to left, $color-four-left 10%, $color-four-right 95%);
+$backgroung-color-caption-four-underline: $color-four-right;
+
 /* MAP */
-/* rajouter des news menu au besoin*/
+    /* rajouter des news menu au besoin*/
 $background-color-menu: (one: $background-color-menu-one, two: $background-color-menu-two, three: $background-color-menu-three, four: $background-color-menu-four);
 $color-menu: (one:$color-menu-one, two:$color-menu-two, three:$color-menu-three, four:$color-menu-four);
 $color-restaurant: (one:$color-one, two:$color-two, three:$color-three, four:$color-four);
 
-
-/* MARGIN & PADDING */
-$margin: 30px 30px 30px 30px;
-$margin-main: 30px 30px 150px 30px;
-$margin-soon: 30px;
-    /* rajouter des news menu au besoin*/
-$margin-menu: (one: $margin, two: $margin, three: $margin, four: $margin); 
-
 /* DIMENSIONS */
-$width-menu: 36%;
-$height-menu: 33rem;
+$width-body: 100%;
+$height-body: 100%;
 
-$height-soon: 5rem;
-$width-soon: 44%;
+$width-menu: 250px;
+$height-menu: $width-menu * (150/100);
 
+$height-soon: $width-menu * (30/100);
+$width-soon: $width-menu * (200/100);
 
-
-$height-header: 10rem;
-$height-footer: 6.6rem;
-$border: 0.3rem;
+$height-header: $width-menu * (70/100);
+$height-footer: $width-menu * (40/100);
+$border: $height-header * (2/100);
 $height-header-page: ($height-header)-($border);
 $height-footer-page: ($height-footer)-($border);
+
+/* MARGIN & PADDING */
+$margin-initial: $width-menu * (5/100);
+$margin: $margin-initial $margin-initial $margin-initial $margin-initial;
+$margin-main: $margin-initial $margin-initial $margin-initial * (800/100) $margin-initial;
+$margin-soon: 30px;
+/* rajouter des news menu au besoin*/
+$margin-menu: (one: $margin, two: $margin, three: $margin, four: $margin); 

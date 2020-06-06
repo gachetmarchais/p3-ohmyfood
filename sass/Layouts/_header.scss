@@ -2,7 +2,8 @@
 
 #header {
     height: $height-header;
-    width: 100%;
+    width: $width-body;
+    
 }
 #header-page {
     display: flex;
