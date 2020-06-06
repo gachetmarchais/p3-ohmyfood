@@ -2,10 +2,10 @@
 
 #header {
     height: $height-header;
-    width: $width-body;
-    
+    width: 100%;
 }
 #header-page {
+    width: 100%;
     display: flex;
     background-color: $background-color-green;
     justify-content: center;

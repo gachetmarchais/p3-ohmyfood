@@ -1,6 +1,5 @@
 ﻿body {
-    width: $width-body;
-    height: $height-body;
+
 }
 /* menu-n°.html */
 
@@ -8,8 +7,10 @@
 }
 
 #main {
-    width: $width-body;
+    max-width: 100%;
+
     height: $height-body;
+    margin: 0;
 
     .menu {
         @each $number, $background-color in $background-color-menu {

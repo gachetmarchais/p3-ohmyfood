@@ -1,8 +1,11 @@
 ﻿
-
+#body {
+    width: auto;
+}
 #main {
-    width: $width-body;
+    max-width: 100%;
     height: $height-body;
+    
 
     .menu {
 

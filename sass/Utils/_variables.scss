@@ -68,11 +68,11 @@ $height-body: 100%;
 $width-menu: 250px;
 $height-menu: $width-menu * (150/100);
 
-$height-soon: $width-menu * (30/100);
+$height-soon: $width-menu * (25/100);
 $width-soon: $width-menu * (200/100);
 
-$height-header: $width-menu * (70/100);
-$height-footer: $width-menu * (40/100);
+$height-header: $width-menu * (60/100);
+$height-footer: $width-menu * (35/100);
 $border: $height-header * (2/100);
 $height-header-page: ($height-header)-($border);
 $height-footer-page: ($height-footer)-($border);
@@ -81,6 +81,6 @@ $height-footer-page: ($height-footer)-($border);
 $margin-initial: $width-menu * (5/100);
 $margin: $margin-initial $margin-initial $margin-initial $margin-initial;
 $margin-main: $margin-initial $margin-initial $margin-initial * (800/100) $margin-initial;
-$margin-soon: 30px;
+$margin-soon: $margin-initial * (200/100);
 /* rajouter des news menu au besoin*/
 $margin-menu: (one: $margin, two: $margin, three: $margin, four: $margin); 
