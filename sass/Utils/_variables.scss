@@ -65,7 +65,10 @@ $color-restaurant: (one:$color-one, two:$color-two, three:$color-three, four:$co
 $width-body: 100%;
 $height-body: 100%;
 
-$width-menu: 250px;
+$media-middle:455px;
+$media-large:871px;
+
+$width-menu: 250px; /* à modifier au besoin */
 $height-menu: $width-menu * (150/100);
 
 $height-soon: $width-menu * (25/100);
@@ -77,10 +80,33 @@ $border: $height-header * (2/100);
 $height-header-page: ($height-header)-($border);
 $height-footer-page: ($height-footer)-($border);
 
+$width-menu-table-column-left: 75%;
+$width-menu-table-column-price: 15%;
+
+$width-menu-table: 100%;
+$height-menu-table: auto;
+
 /* MARGIN & PADDING */
-$margin-initial: $width-menu * (5/100);
+$margin-initial: $width-menu * (10/100);
 $margin: $margin-initial $margin-initial $margin-initial $margin-initial;
-$margin-main: $margin-initial $margin-initial $margin-initial * (800/100) $margin-initial;
-$margin-soon: $margin-initial * (200/100);
-/* rajouter des news menu au besoin*/
+$padding-main: $margin-initial  $margin-initial $margin-initial*(500/100) $margin-initial;
+$margin-soon: $margin-initial $margin-initial $margin-initial * (800/100) $margin-initial;
+
+    /* rajouter des news menu au besoin*/
 $margin-menu: (one: $margin, two: $margin, three: $margin, four: $margin); 
+$margin-menu-h1: 30px auto auto auto;
+$margin-menu-title: 40px auto 0px auto;
+$margin-menu-page: 20px 30px 110px 30px;
+
+$margin-menu-one-bottom: 20px auto 0px auto;
+$margin-menu-one-desktop: 20px 80px 120px 80px;
+$padding-menu-one: 0px 80px 50px 80px;
+
+$margin-menu-two-desktop: 20px 80px 120px 80px;
+$padding-menu-two: 0px 20px 50px 20px;
+
+$margin-menu-three-desktop: 20px 80px 120px 80px;
+$padding-menu-three: 0px 20px 50px 20px;
+
+$margin-menu-four-desktop: 20px 60px 120px 60px;
+$padding-menu-four: 0px 20px 50px 20px; 

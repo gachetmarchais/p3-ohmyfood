@@ -1,4 +1,6 @@
 ﻿body {
+    @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@700&family=Devonshire&family=Kaushan+Script&display=swap');
+    
 }
 %menu-typography{
 display: flex;
@@ -9,69 +11,86 @@ align-items: center;
 width: 100%;
 }
 
+
 %menu-title-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+%typography-h3 {
+    width: 70%;
+    @media(min-width: $media-middle) {
+        width: 50%;
+    }
+    @media(min-width: $media-large) {
+        width: 33%;
+    }
+    display: inline-block;
+    transition: background-size 1s;
+}
+%typography-h3-caption {
+    display: inline-block;
+    content: "";
+    width: 15%;
+
+    @media(min-width: $media-middle) {
+        width: 25%;
+    }
+
+    @media(min-width: $media-large) {
+        width: 33%;
+    }
+}
     /* en rajouter si plus de menus */
 %beforeafter-caption-one {
-    content: "";
-    width: 33%;
     height: 5px;
-    display: inline-block;
     background-color: $background-color-caption-one;
+    @extend %typography-h3-caption;
 }
 %beforeafter-caption-two {
-    content: "";
-    width: 33%;
     height: 5px;
-    display: inline-block;
-}
-%beforeafter-caption-three {
-    content: "";
-    width: 33%;
-    height: 5px;
-    display: inline-block;
-}
-%beforeafter-caption-four {
-    content: "";
-    width: 33%;
-    height: 5px;
-    display: inline-block;
+    @extend %typography-h3-caption;
 }
 
-    /* ANIMATIONS */
+%beforeafter-caption-three {
+    height: 5px;
+    @extend %typography-h3-caption;
+}
+
+%beforeafter-caption-four {
+    height: 5px;
+    @extend %typography-h3-caption;
+}
+/* ANIMATIONS */
 %animation-menu-title {
     cursor: pointer;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 1000ms;
+
     &:hover {
         transform: scale(1.15);
         opacity: 0.5;
     }
 }
-
-
-
-    /* POLICES */
-
-
+/* POLICES */
 %fonts-menu-title-one {
     font-family: 'Devonshire', cursive;
+    font-weight: 500;
 }
 
 %fonts-menu-table-one {
     font-family: calliope-mvb,sans-serif;
-    font-weight: 700;
     font-style: normal;
     letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 18px;
 }
 
 %fonts-menu-title-two {
     font-family: 'Croissant One', cursive;
 }
+
 %fonts-menu-table-two {
     font-family: noto-serif, serif;
     font-weight: 500;
@@ -81,6 +100,7 @@ width: 100%;
 %fonts-menu-title-three {
     font-family: 'Dancing Script', cursive;
 }
+
 %fonts-menu-table-three {
     font-family: calliope-mvb,sans-serif;
     font-weight: 700;
@@ -98,32 +118,78 @@ width: 100%;
     font-style: normal;
     letter-spacing: 1px;
 }
-%ohmyfood {
-    font-family: 'DM Sans', sans-serif;
-    letter-spacing: -2px;
-    font-weight: bold;    
-}
+
 %ohmyfood {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: -2px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
+
+    @media(min-width: $media-middle) {
+        font-size: 25px;
+    }
+
+    @media(min-width: $media-large) {
+        font-size: 30px;
+    }
 }
+
 %soon {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: 0px;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 18px;
+    @media(min-width: $media-large) {
+        font-size: 28px;
+    }
 }
+
 %footer-page {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: 0px;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 18px;
+
+    @media(min-width: $media-middle) {
+        font-size: 22px;
+    }
+
+    @media(min-width: $media-large) {
+        font-size: 26px;
+    }
 }
+
+%footer-page-mail {
+    text-align: right;
+}
+
 %title {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: 0px;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 20px;
+
+    @media(min-width: $media-middle) {
+        font-size: 24px;
+    }
+
+    @media(min-width: $media-large) {
+        font-size: 30px;
+    }
+}
+/* taille et dispositions des menus */
+%bloc-menu {
+    margin: $margin-menu-page;
+    width: $width-menu-table;
+    height: $height-menu-table;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+%menu-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

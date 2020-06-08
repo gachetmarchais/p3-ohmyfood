@@ -5,7 +5,7 @@
 #main {
     max-width: 100%;
     height: $height-body;
-    
+  
 
     .menu {
 
@@ -15,48 +15,44 @@
                 @include shadow-menus;
             }
         }
-
         @each $number, $color in $color-restaurant {
             &-title-#{$number} h2 {
                 background: $color;
             }
         }
-
         h2 {
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
         }
-
         @each $number, $color in $color-menu {
             &-title-#{$number} h3 {
                 color: $color;
             }
         }
-
-        &-title-one {
+        &-title-one{        
             @extend %animation-menu-title
         }
-
         &-title-two {
             @extend %animation-menu-title
         }
-
         &-title-three {
             @extend %animation-menu-title
         }
-
         &-title-four {
             @extend %animation-menu-title
         }
     }
 }
 
+.fa-music {
+    background: linear-gradient(120deg, $color-note-left 40%, $color-note-right 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 
 #soon {
     color: $color-yellow;
     background-color: $background-color-green;
-
-
     span {
         animation: apparition 1.4s infinite;
         animation-duration: 1.4s;
@@ -68,29 +64,22 @@
         animation-play-state: running;
         animation-name: apparition;
     }
-
     span:nth-child(1) {
         animation-delay: 0.3s;
     }
-
     span:nth-child(2) {
         animation-delay: 0.6s;
     }
-
     span:nth-child(3) {
         animation-delay: 0.9s;
     }
-
-
     @keyframes apparition {
         0% {
             opacity: 0;
         }
-
         25% {
             opacity: 1;
         }
-
         100% {
             opacity: 0;
         }

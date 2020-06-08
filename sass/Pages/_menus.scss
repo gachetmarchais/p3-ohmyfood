@@ -1,14 +1,6 @@
-﻿body {
-
-}
-/* menu-n°.html */
-
-#title { /* identiques sur les 4 menus !!! */
-}
-
+﻿
 #main {
     max-width: 100%;
-
     height: $height-body;
     margin: 0;
 
@@ -19,54 +11,40 @@
                 @include shadow-menus;
             }
         }
-
         &-title-one-bottom {
             @extend %menu-title-bottom;
         }
-
-        table {
-            width: 100%;
+        table {          
             vertical-align: middle;
-
             th:nth-child(1) {
                 width: 80%;
             }
-
             th:nth-child(2) {
                 width: 20%;
             }
-
             td:nth-child(1) {
                 text-align: start;
             }
-
             td:nth-child(2) {
                 text-align: end;
             }
-
             h3 {
-                width: 33%;
-                display: inline-block;
-                transition: background-size 1s;
+                @extend %typography-h3
             }
         }
         /*couleurs dans menus à duppliquer pour chaque menu*/
         &-table {
             &-one {
                 color: $color-text-one;
-
                 caption:before {
                     @extend %beforeafter-caption-one;
                 }
-
                 caption:after {
                     @extend %beforeafter-caption-one;
                 }
-
                 h3 {
                     background: linear-gradient(to top, $color-text-one 0%, $color-text-one 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
                 }
-
                 h3:hover {
                     background-size: 100% 100%;
                 }
