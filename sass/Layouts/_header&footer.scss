@@ -10,7 +10,11 @@
 }
 
 .footer {
-    position: fixed;
+    position: initial;
+    @media (min-width:$media-middle) {
+        position: fixed;
+    }
+
     bottom: 0;
     width: 100%;
     display: flex;
@@ -22,6 +26,7 @@
 
     a {
         color: $color-yellow;
+
         &:hover {
             animation: wiggle 0.3s;
             animation-iteration-count: infinite;

@@ -1,7 +1,7 @@
 ﻿
 #body {
-    width: auto;
 
+    margin: auto;
     a {
         text-decoration: none;
     }
@@ -11,7 +11,6 @@
     height: $height-body;
 
     .menu {
-
         @each $number, $background-color in $background-color-menu {
             &-page-#{$number} {
                 background-color: $background-color;

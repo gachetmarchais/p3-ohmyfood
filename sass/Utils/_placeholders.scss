@@ -3,17 +3,18 @@
 }
     /* Tailles des menus */
 
-%menu-typography{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-text-align: center;
-align-items: center;
+%menu-typography {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-%menu-typography-small {
+%menu-typography-small { /* ne sert pas*/
     width: 100%;
 }
-%menu-typography-large {
+%menu-typography-large {/* ne sert pas*/
     width: 900px;
     padding-left: 100px;
     padding-right: 100px;

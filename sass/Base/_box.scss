@@ -1,23 +1,17 @@
 ﻿body {
     margin: auto;
+ 
 }
     /* intex.html */
-#main {
+
+h1 {
+    margin: $margin-menu-h1;
     text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: $padding-main;
-
-
-    h1 {
-        margin: $margin-menu-h1;
-    }
-
+}
+    /*HOME*/
+#main {
+    @extend %menu-typography;
     .menu {
-
-        @extend %menu-typography;
-
         @each $number, $margin in $margin-menu {
             &-page-#{$number} {
                 margin: $margin;
@@ -39,172 +33,182 @@
                 justify-content: center;
             }
         }
+    }
+}
+    /*PAGES*/
+
+.menu {
+    margin: auto;
+    @extend %menu-typography;
 
 
-        table {
-            min-width: 100%;
+
+    table {
+        td:nth-child(1) {
+            width: $width-menu-table-column-left;
+        }
+
+        td:nth-child(2) {
+            width: $width-menu-table-column-price;
+        }
+    }
+
+    section:nth-child(1) {
+        margin: $margin-menu-title;
+    }
+
+    section:nth-child(2) {
+        @extend %menu-table;
+    }
+    /* La note enchantée */
+    &-one {
+        @extend %bloc-menu;
+
+        @media (min-width:$media-middle) {
+            padding: $padding-menu-one;
+        }
+
+        @media (min-width:$media-large) {
+            margin: $margin-menu-one-desktop;
+        }
+    }
+
+    &-title-one {
+        &-bottom {
+            margin: $margin-menu-one-bottom;
+
+            .fas {
+                padding-right: $padding-menu-one-bottom-fas;
+
+                @media (min-width:$media-middle) {
+                    padding-right: $padding-menu-one-bottom-fas-middle;
+                }
+            }
+        }
+    }
+    /* Le chic à la française */
+    &-two {
+        @extend %bloc-menu;
+
+        @media (min-width:$media-middle) {
+            padding: $padding-menu-two;
 
             td:nth-child(1) {
-                width: $width-menu-table-column-left;
+                padding-left: 40px;
             }
 
             td:nth-child(2) {
-                width: $width-menu-table-column-price;
+                padding-right: 40px;
             }
         }
 
-        article:nth-child(1) {
-            margin: $margin-menu-title;
-        }
+        @media (min-width:$media-large) {
+            padding: $padding-menu-two;
 
-        article:nth-child(2) {
-            @extend %menu-table;
-        }
-        /* La note enchantée */
-        &-one {
-            @extend %bloc-menu;
-
-            @media (min-width:$media-middle) {
-                padding: $padding-menu-one;
+            td:nth-child(1) {
+                padding-left: 80px;
             }
 
-            @media (min-width:$media-large) {
-                margin: $margin-menu-one-desktop;
+            td:nth-child(2) {
+                padding-right: 80px;
             }
         }
 
-        &-title-one {
-            &-bottom {
-                margin: $margin-menu-one-bottom;
-                .fas{
-                    padding-right: $padding-menu-one-bottom-fas;
-                    @media (min-width:$media-middle) {
-                        padding-right: $padding-menu-one-bottom-fas-middle;
-                    }
-                }
-            }
-            /* Le chic à la française */
-            &-two {
-                @extend %bloc-menu;
-
-                @media (min-width:$media-middle) {
-                    padding: $padding-menu-two;
-                    
-                    td:nth-child(1) {
-                        padding-left: 40px;
-                    }
-
-                    td:nth-child(2) {
-                        padding-right: 40px;
-                    }
-                }
-
-                @media (min-width:$media-large) {
-                    padding: $padding-menu-two;
-
-                    td:nth-child(1) {
-                        padding-left: 80px;
-                    }
-
-                    td:nth-child(2) {
-                        padding-right: 80px;
-                    }
-                }
-
-                @media (min-width:$media-large) {
-                    margin: $margin-menu-two-desktop;
-                }
-            }
-            /* Le délice des poapilles */
-            &-three {
-                @extend %bloc-menu;
-
-                @media (min-width:$media-middle) {
-                    padding: $padding-menu-three;
-
-                    td:nth-child(1) {
-                        padding-left: 40px;
-                    }
-
-                    td:nth-child(2) {
-                        padding-right: 40px;
-                    }
-                }
-
-                @media (min-width:$media-large) {
-                    padding: $padding-menu-three;
-
-                    td:nth-child(1) {
-                        padding-left: 80px;
-                    }
-
-                    td:nth-child(2) {
-                        padding-right: 80px;
-                    }
-                }
-
-                @media (min-width:$media-large) {
-                    margin: $margin-menu-three-desktop;
-                }
-            }
-            /* La palettes du goût */
-            &-four {
-                @extend %bloc-menu;
-
-                @media (min-width:$media-middle) {
-                    padding: $padding-menu-four;
-
-                    td:nth-child(1) {
-                        padding-left: 40px;
-                    }
-
-                    td:nth-child(2) {
-                        padding-right: 40px;
-                    }
-                }
-
-                @media (min-width:$media-large) {
-                    padding: $padding-menu-four;
-
-                    td:nth-child(1) {
-                        padding-left: 80px;
-                    }
-
-                    td:nth-child(2) {
-                        padding-right: 80px;
-                    }
-                }
-
-                @media (min-width:$media-large) {
-                    margin: $margin-menu-four-desktop;
-                }
-            }
+        @media (min-width:$media-large) {
+            margin: $margin-menu-two-desktop;
         }
     }
-
-    #soon {
-        display: inline-block;
-        border-radius: 10px 10px;
-        width: 300px;
-        height: 62.5px;
-        margin: 0 0 200px 0;
-
+    /* Le délice des poapilles */
+    &-three {
+        @extend %bloc-menu;
 
         @media (min-width:$media-middle) {
-            display: flex;
-            border-radius: 10px 10px;
-            width: $width-soon;
-            height: $height-soon;
-            justify-content: center;
-            align-items: center;
-            margin: $margin-soon;
+            padding: $padding-menu-three;
+
+            td:nth-child(1) {
+                padding-left: 40px;
+            }
+
+            td:nth-child(2) {
+                padding-right: 40px;
+            }
         }
 
-        p {
-            margin-right: 10px;
+        @media (min-width:$media-large) {
+            padding: $padding-menu-three;
+
+            td:nth-child(1) {
+                padding-left: 80px;
+            }
+
+            td:nth-child(2) {
+                padding-right: 80px;
+            }
+        }
+
+        @media (min-width:$media-large) {
+            margin: $margin-menu-three-desktop;
+        }
+    }
+    /* La palettes du goût */
+    &-four {
+        @extend %bloc-menu;
+
+        @media (min-width:$media-middle) {
+            padding: $padding-menu-four;
+
+            td:nth-child(1) {
+                padding-left: 40px;
+            }
+
+            td:nth-child(2) {
+                padding-right: 40px;
+            }
+        }
+
+        @media (min-width:$media-large) {
+            padding: $padding-menu-four;
+
+            td:nth-child(1) {
+                padding-left: 80px;
+            }
+
+            td:nth-child(2) {
+                padding-right: 80px;
+            }
+        }
+
+        @media (min-width:$media-large) {
+            margin: $margin-menu-four-desktop;
         }
     }
 }
+
+
+#soon {
+    display: inline-block;
+    border-radius: 10px 10px;
+    width: 300px;
+    height: 62.5px;
+    margin: 0 0 200px 0;
+
+
+    @media (min-width:$media-middle) {
+        display: flex;
+        border-radius: 10px 10px;
+        width: $width-soon;
+        height: $height-soon;
+        justify-content: center;
+        align-items: center;
+        margin: $margin-soon;
+    }
+
+    p {
+        margin-right: 10px;
+    }
+}
+
+
 
  
    
