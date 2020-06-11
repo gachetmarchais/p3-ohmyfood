@@ -15,16 +15,24 @@
     }
 
     .menu {
-
-
         @extend %menu-typography;
-
 
         @each $number, $margin in $margin-menu {
             &-page-#{$number} {
                 margin: $margin;
                 width: $width-menu;
                 height: $height-menu;
+
+                @media (min-width:$media-middle) {
+                    width: $width-menu-middle;
+                    height: $height-menu-middle;
+                }
+
+                @media (min-width:$media-large) {
+                    width: $width-menu-large;
+                    height: $height-menu-large;
+                }
+
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -192,5 +200,5 @@
     }
 }
 
-
+ 
    

@@ -15,20 +15,22 @@
 </head>
 
 <body id="body">
-    <OBJECT data="header.html" type="text/html" id="header"></OBJECT>
+    <a href="../index.html">
+        <header class="header"><h1>ohmyfood</h1></header>
+    </a>
     <main id="main">
 
         <h1>Le chic à la française</h1>
 
-        <section class="menu">
+        <article class="menu">
 
             <div class="menu-two">
-                <article class="menu-title-two">
+                <section class="menu-title-two">
                     <div class="menu-title-two-page">
                         <h2>Le chic à la française</h2>
-                    </div>                
-                </article>
-                <article class="menu-table-two">
+                    </div>
+                </section>
+                <section class="menu-table-two">
                     <table>
                         <caption><h3>Pour se mettre en appétit</h3></caption>
                         <tr>
@@ -71,11 +73,14 @@
                             <td>Millefeuille croustillant</td>
                         </tr>
                     </table>
-                </article>
+                </section>
             </div>
-        </section>
+        </article>
     </main>
-    <OBJECT data="footer.html" type="text/html" id="footer"></OBJECT>
+    <footer class="footer">
+        <a href="./pages/legal-notice.html"><article>Mentions légales</article></a>
+        <a href="mailto:contact@ohmyfood.com"><article>Contactez-nous</article></a>
+    </footer>
 
 </body>
 </html>

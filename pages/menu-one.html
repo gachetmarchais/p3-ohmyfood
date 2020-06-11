@@ -15,26 +15,26 @@
 </head>
 
 <body id="body">
-    <a href="../index.html"> <!-- NE FONCTIONNE PAS -->
-    <OBJECT data="header.html" type="text/html" id="header"></OBJECT>
+    <a href="../index.html">
+        <header class="header"><h1>ohmyfood</h1></header>
     </a>
 
     <main id="main">
 
         <h1>La note enchantée</h1>
 
-        <section class="menu">
+        <article class="menu">
             <div class="menu-one">
 
-                <article class="menu-title-one">
+                <section class="menu-title-one">
                     <div class="menu-title-one-page">
                         <i class="fas fa-music"></i>
                         <h2>La note enchantée</h2>
                     </div>
-                </article>
-                <article class="menu-table-one">
+                </section>
+                <section class="menu-table-one">
                     <table>
-                        <caption ><h3>Prélude</h3></caption>
+                        <caption class="caption-one"><h3>Prélude</h3></caption>
                         <tr>
                             <td>Ravioles de fois gras accompagnés de leur crème à la truffe</td>
                             <td>98€</td>
@@ -79,17 +79,20 @@
                             <td>Tarte au citron meringuée destructurée</td>
                         </tr>
                     </table>
-                    <article class="menu-title-one-bottom">
-                        <i class="fas fa-music"></i>
-                        <p>La note enchantée</p>
-                    </article>
-                </article>
+                </section>
+                <section class="menu-title-one-bottom">
+                    <i class="fas fa-music"></i>
+                    <p>La note enchantée</p>
+                </section>
             </div>
 
-        </section>
+        </article>
     </main>
 
-    <OBJECT data="footer.html" type="text/html" id="footer"></OBJECT>
+    <footer class="footer">
+        <a href="./pages/legal-notice.html"><article>Mentions légales</article></a>
+        <a href="mailto:contact@ohmyfood.com"><article>Contactez-nous</article></a>
+    </footer>
 
 </body>
 </html>

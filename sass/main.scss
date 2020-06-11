@@ -5,19 +5,11 @@
 @import "./utils/mixins.scss";
 @import "./utils/placeholders.scss";
 
-@import "./base/reset.scss";
+
 @import "./base/box.scss";
 @import "./base/fonts.scss";
 
-@import "./components/buttons.scss";
-
-@import "./layouts/header.scss";
-@import "./layouts/tables.scss";
-@import "./layouts/footer.scss";
+@import "./layouts/header&footer.scss";
 
 @import "./pages/home.scss";
 @import "./pages/menus.scss";
-@import "./pages/menu-one.scss";
-@import "./pages/menu-two.scss";
-@import "./pages/menu-three.scss";
-@import "./pages/menu-four.scss";

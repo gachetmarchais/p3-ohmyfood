@@ -15,20 +15,21 @@
 </head>
 
 <body id="body">
-    <OBJECT data="header.html" type="text/html" id="header"></OBJECT>
-
+    <a href="../index.html">
+        <header class="header"><h1>ohmyfood</h1></header>
+    </a>
     <main id="main">
 
         <h1>Le délice des papilles</h1>
 
-        <section class="menu">
+        <article class="menu">
             <div class="menu-three">
-                <article class="menu-title-three">
+                <section class="menu-title-three">
                     <div class="menu-title-three-page">
                         <h2>Le délice des papilles</h2>
                     </div>
-                </article>
-                <article class="menu-table-three">
+                </section>
+                <section class="menu-table-three">
                     <table>
                         <caption><h3>Pour bien commencer</h3></caption>
                         <tr>
@@ -74,13 +75,16 @@
                             <td>55€</td>
                         </tr>
                     </table>
-                </article>
+                </section>
             </div>
 
-        </section>
+        </article>
     </main>
 
-    <OBJECT data="footer.html" type="text/html" id="footer"></OBJECT>
+    <footer class="footer">
+        <a href="./pages/legal-notice.html"><article>Mentions légales</article></a>
+        <a href="mailto:contact@ohmyfood.com"><article>Contactez-nous</article></a>
+    </footer>
 
 </body>
 </html>

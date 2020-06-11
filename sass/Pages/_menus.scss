@@ -118,7 +118,7 @@
                 }
             }
 
-            &-three { /*à mofier toutes les couleurs*/
+            &-three { 
                 color: $color-text-three;
 
                 table:nth-child(1) {
@@ -132,12 +132,12 @@
 
                     caption:before {
                         @extend %beforeafter-caption-three;
-                        background-color: $background-color-caption-three-first; /*à modifier 1er 2eme 3eme*/
+                        background-color: $background-color-caption-three-first; 
                     }
 
                     caption:after {
                         @extend %beforeafter-caption-three;
-                        background-color: $background-color-caption-three-first; /*à modifier 1er 2eme 3eme*/
+                        background-color: $background-color-caption-three-first; 
                     }
                 }
 
@@ -152,12 +152,12 @@
 
                     caption:before {
                         @extend %beforeafter-caption-three;
-                        background-color: $background-color-caption-three-second; /*à modifier 1er 2eme 3eme*/
+                        background-color: $background-color-caption-three-second; 
                     }
 
                     caption:after {
                         @extend %beforeafter-caption-three;
-                        background-color: $background-color-caption-three-second; /*à modifier 1er 2eme 3eme*/
+                        background-color: $background-color-caption-three-second; 
                     }
                 }
 
@@ -172,12 +172,12 @@
 
                     caption:before {
                         @extend %beforeafter-caption-three;
-                        background-color: $background-color-caption-three-third; /*à modifier 1er 2eme 3eme*/
+                        background-color: $background-color-caption-three-third; 
                     }
 
                     caption:after {
                         @extend %beforeafter-caption-three;
-                        background-color: $background-color-caption-three-third; /*à modifier 1er 2eme 3eme*/
+                        background-color: $background-color-caption-three-third; 
                     }
                 }
             }

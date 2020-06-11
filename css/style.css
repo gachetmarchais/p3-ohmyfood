@@ -137,19 +137,19 @@ body {
   letter-spacing: 1px;
 }
 
-#header-page {
+.header {
   font-family: "DM Sans", sans-serif;
   letter-spacing: -2px;
   font-weight: bold;
   font-size: 20px;
 }
 @media (min-width: 455px) {
-  #header-page {
+  .header {
     font-size: 25px;
   }
 }
 @media (min-width: 871px) {
-  #header-page {
+  .header {
     font-size: 30px;
   }
 }
@@ -221,10 +221,6 @@ body {
   justify-content: space-between;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
   margin: auto;
 }
@@ -254,6 +250,18 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 455px) {
+  #main .menu-page-one {
+    width: 300px;
+    height: 450px;
+  }
+}
+@media (min-width: 871px) {
+  #main .menu-page-one {
+    width: 500px;
+    height: 750px;
+  }
+}
 #main .menu-page-two {
   margin: 25px 25px 25px 25px;
   width: 250px;
@@ -261,6 +269,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (min-width: 455px) {
+  #main .menu-page-two {
+    width: 300px;
+    height: 450px;
+  }
+}
+@media (min-width: 871px) {
+  #main .menu-page-two {
+    width: 500px;
+    height: 750px;
+  }
 }
 #main .menu-page-three {
   margin: 25px 25px 25px 25px;
@@ -270,6 +290,18 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 455px) {
+  #main .menu-page-three {
+    width: 300px;
+    height: 450px;
+  }
+}
+@media (min-width: 871px) {
+  #main .menu-page-three {
+    width: 500px;
+    height: 750px;
+  }
+}
 #main .menu-page-four {
   margin: 25px 25px 25px 25px;
   width: 250px;
@@ -277,6 +309,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (min-width: 455px) {
+  #main .menu-page-four {
+    width: 300px;
+    height: 450px;
+  }
+}
+@media (min-width: 871px) {
+  #main .menu-page-four {
+    width: 500px;
+    height: 750px;
+  }
 }
 #main .menu table {
   min-width: 100%;
@@ -606,46 +650,32 @@ body {
   }
 }
 
-#header {
+.header {
   height: 150px;
-  width: 100%;
-}
-
-#header-page {
   width: 100%;
   display: flex;
   background-color: #579c87;
   justify-content: center;
-  height: 147px;
   align-items: center;
   border-bottom: 3px solid #a1c181;
-  /* à modifier en bloc de propriétés (idem footer)*/
-}
-#header-page * {
   color: #fdcb46;
 }
 
-#footer {
+.footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-#footer-page {
   display: flex;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
   height: 87.5px;
   align-items: center;
   justify-content: space-between;
   background-color: #579c87;
   border-top: 3px solid #a1c181;
 }
-#footer-page a {
+.footer a {
   color: #fdcb46;
 }
-#footer-page a:hover {
+.footer a:hover {
   animation: wiggle 0.3s;
   animation-iteration-count: infinite;
 }
@@ -663,15 +693,18 @@ body {
     transform: rotate(0deg);
   }
 }
-#footer-page a:nth-child(1) {
+.footer a:nth-child(1) {
   padding-left: 40px;
 }
-#footer-page a:nth-child(2) {
+.footer a:nth-child(2) {
   padding-right: 40px;
 }
 
 #body {
   width: auto;
+}
+#body a {
+  text-decoration: none;
 }
 
 #main {
@@ -700,7 +733,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 #main .menu-title-two h2 {
-  background: linear-gradient(170deg, #e38a12 20%, #6e4ccc 45%);
+  background: linear-gradient(170deg, #e38a12 20%, #6e4ccc 55%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -862,7 +895,6 @@ body {
   background-color: #6e4ccc;
 }
 #main .menu-table-three {
-  /*à mofier toutes les couleurs*/
   color: #000000;
 }
 #main .menu-table-three table:nth-child(1) h3 {
@@ -873,11 +905,9 @@ body {
 }
 #main .menu-table-three table:nth-child(1) caption:before {
   background-color: #0228dd;
-  /*à modifier 1er 2eme 3eme*/
 }
 #main .menu-table-three table:nth-child(1) caption:after {
   background-color: #0228dd;
-  /*à modifier 1er 2eme 3eme*/
 }
 #main .menu-table-three table:nth-child(2) h3 {
   background: linear-gradient(to top, #0670f3 0%, #0670f3 10%, transparent 10.01%) no-repeat left bottom/0 100%;
@@ -887,11 +917,9 @@ body {
 }
 #main .menu-table-three table:nth-child(2) caption:before {
   background-color: #0670f3;
-  /*à modifier 1er 2eme 3eme*/
 }
 #main .menu-table-three table:nth-child(2) caption:after {
   background-color: #0670f3;
-  /*à modifier 1er 2eme 3eme*/
 }
 #main .menu-table-three table:nth-child(3) h3 {
   background: linear-gradient(to top, #0670f3 0%, #0670f3 10%, transparent 10.01%) no-repeat left bottom/0 100%;
@@ -901,11 +929,9 @@ body {
 }
 #main .menu-table-three table:nth-child(3) caption:before {
   background-color: #229df9;
-  /*à modifier 1er 2eme 3eme*/
 }
 #main .menu-table-three table:nth-child(3) caption:after {
   background-color: #229df9;
-  /*à modifier 1er 2eme 3eme*/
 }
 #main .menu-table-four {
   color: #000000;

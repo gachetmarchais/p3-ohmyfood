@@ -1,11 +1,14 @@
 ﻿
 #body {
     width: auto;
+
+    a {
+        text-decoration: none;
+    }
 }
 #main {
     max-width: 100%;
     height: $height-body;
-
 
     .menu {
 

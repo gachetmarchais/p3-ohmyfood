@@ -1,15 +1,19 @@
-﻿
-#footer {
-    position: fixed;
-    bottom: 0;
+﻿.header {
+    height: $height-header;
     width: 100%;
+    display: flex;
+    background-color: $background-color-green;
+    justify-content: center;
+    align-items: center;
+    border-bottom: $border solid $border-header-footer;
+    color: $color-yellow;
 }
 
-#footer-page {
-    display: flex;
+.footer {
     position: fixed;
-    width: 100%;
     bottom: 0;
+    width: 100%;
+    display: flex;
     height: $height-footer;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +22,6 @@
 
     a {
         color: $color-yellow;
-
         &:hover {
             animation: wiggle 0.3s;
             animation-iteration-count: infinite;

@@ -5,11 +5,10 @@
     "\\pages",
     "\\sass",
     "\\sass\\Base",
-    "\\sass\\Components",
     "\\sass\\Layouts",
     "\\sass\\Pages",
     "\\sass\\Utils"
   ],
-  "SelectedNode": "\\css\\style.css",
+  "SelectedNode": "\\sass\\main.scss",
   "PreviewInSolutionExplorer": false
 }
