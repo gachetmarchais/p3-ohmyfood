@@ -75,106 +75,111 @@
         &-title-one {
             &-bottom {
                 margin: $margin-menu-one-bottom;
-            }
-        }
-        /* Le chic à la française */
-        &-two {
-            @extend %bloc-menu;
-
-            @media (min-width:$media-middle) {
-                padding: $padding-menu-two;
-
-                td:nth-child(1) {
-                    padding-left: 40px;
-                }
-
-                td:nth-child(2) {
-                    padding-right: 40px;
+                .fas{
+                    padding-right: $padding-menu-one-bottom-fas;
+                    @media (min-width:$media-middle) {
+                        padding-right: $padding-menu-one-bottom-fas-middle;
+                    }
                 }
             }
+            /* Le chic à la française */
+            &-two {
+                @extend %bloc-menu;
 
-            @media (min-width:$media-large) {
-                padding: $padding-menu-two;
+                @media (min-width:$media-middle) {
+                    padding: $padding-menu-two;
+                    
+                    td:nth-child(1) {
+                        padding-left: 40px;
+                    }
 
-                td:nth-child(1) {
-                    padding-left: 80px;
+                    td:nth-child(2) {
+                        padding-right: 40px;
+                    }
                 }
 
-                td:nth-child(2) {
-                    padding-right: 80px;
-                }
-            }
+                @media (min-width:$media-large) {
+                    padding: $padding-menu-two;
 
-            @media (min-width:$media-large) {
-                margin: $margin-menu-two-desktop;
-            }
-        }
-        /* Le délice des poapilles */
-        &-three {
-            @extend %bloc-menu;
+                    td:nth-child(1) {
+                        padding-left: 80px;
+                    }
 
-            @media (min-width:$media-middle) {
-                padding: $padding-menu-three;
-
-                td:nth-child(1) {
-                    padding-left: 40px;
+                    td:nth-child(2) {
+                        padding-right: 80px;
+                    }
                 }
 
-                td:nth-child(2) {
-                    padding-right: 40px;
-                }
-            }
-
-            @media (min-width:$media-large) {
-                padding: $padding-menu-three;
-
-                td:nth-child(1) {
-                    padding-left: 80px;
-                }
-
-                td:nth-child(2) {
-                    padding-right: 80px;
+                @media (min-width:$media-large) {
+                    margin: $margin-menu-two-desktop;
                 }
             }
+            /* Le délice des poapilles */
+            &-three {
+                @extend %bloc-menu;
 
-            @media (min-width:$media-large) {
-                margin: $margin-menu-three-desktop;
+                @media (min-width:$media-middle) {
+                    padding: $padding-menu-three;
+
+                    td:nth-child(1) {
+                        padding-left: 40px;
+                    }
+
+                    td:nth-child(2) {
+                        padding-right: 40px;
+                    }
+                }
+
+                @media (min-width:$media-large) {
+                    padding: $padding-menu-three;
+
+                    td:nth-child(1) {
+                        padding-left: 80px;
+                    }
+
+                    td:nth-child(2) {
+                        padding-right: 80px;
+                    }
+                }
+
+                @media (min-width:$media-large) {
+                    margin: $margin-menu-three-desktop;
+                }
             }
-        }
-        /* La palettes du goût */
-        &-four {
-            @extend %bloc-menu;
+            /* La palettes du goût */
+            &-four {
+                @extend %bloc-menu;
 
-            @media (min-width:$media-middle) {
-                padding: $padding-menu-four;
+                @media (min-width:$media-middle) {
+                    padding: $padding-menu-four;
 
-                td:nth-child(1) {
-                    padding-left: 40px;
+                    td:nth-child(1) {
+                        padding-left: 40px;
+                    }
+
+                    td:nth-child(2) {
+                        padding-right: 40px;
+                    }
                 }
 
-                td:nth-child(2) {
-                    padding-right: 40px;
+                @media (min-width:$media-large) {
+                    padding: $padding-menu-four;
+
+                    td:nth-child(1) {
+                        padding-left: 80px;
+                    }
+
+                    td:nth-child(2) {
+                        padding-right: 80px;
+                    }
                 }
-            }
 
-            @media (min-width:$media-large) {
-                padding: $padding-menu-four;
-
-                td:nth-child(1) {
-                    padding-left: 80px;
+                @media (min-width:$media-large) {
+                    margin: $margin-menu-four-desktop;
                 }
-
-                td:nth-child(2) {
-                    padding-right: 80px;
-                }
-            }
-
-            @media (min-width:$media-large) {
-                margin: $margin-menu-four-desktop;
             }
         }
     }
-
 
     #soon {
         display: inline-block;

@@ -30,7 +30,7 @@ body {
 }
 
 #main .menu table h3 {
-  width: 70%;
+  width: 60%;
   display: inline-block;
   transition: background-size 1s;
 }
@@ -48,7 +48,7 @@ body {
 #main .menu-table-four table caption:after, #main .menu-table-four table caption:before, #main .menu-table-three table:nth-child(3) caption:after, #main .menu-table-three table:nth-child(3) caption:before, #main .menu-table-three table:nth-child(2) caption:after, #main .menu-table-three table:nth-child(2) caption:before, #main .menu-table-three table:nth-child(1) caption:after, #main .menu-table-three table:nth-child(1) caption:before, #main .menu-table-two table:nth-child(3) caption::after, #main .menu-table-two table:nth-child(3) caption:before, #main .menu-table-two table:nth-child(2) caption::after, #main .menu-table-two table:nth-child(2) caption:before, #main .menu-table-two table:nth-child(1) caption::after, #main .menu-table-two table:nth-child(1) caption:before, #main .menu-table-one caption:after, #main .menu-table-one caption:before {
   display: inline-block;
   content: "";
-  width: 15%;
+  width: 20%;
 }
 @media (min-width: 455px) {
   #main .menu-table-four table caption:after, #main .menu-table-four table caption:before, #main .menu-table-three table:nth-child(3) caption:after, #main .menu-table-three table:nth-child(3) caption:before, #main .menu-table-three table:nth-child(2) caption:after, #main .menu-table-three table:nth-child(2) caption:before, #main .menu-table-three table:nth-child(1) caption:after, #main .menu-table-three table:nth-child(1) caption:before, #main .menu-table-two table:nth-child(3) caption::after, #main .menu-table-two table:nth-child(3) caption:before, #main .menu-table-two table:nth-child(2) caption::after, #main .menu-table-two table:nth-child(2) caption:before, #main .menu-table-two table:nth-child(1) caption::after, #main .menu-table-two table:nth-child(1) caption:before, #main .menu-table-one caption:after, #main .menu-table-one caption:before {
@@ -205,7 +205,7 @@ body {
 }
 
 /* taille et dispositions des menus */
-#main .menu-four, #main .menu-three, #main .menu-two, #main .menu-one {
+#main .menu-title-one-four, #main .menu-title-one-three, #main .menu-title-one-two, #main .menu-one {
   margin: 20px 30px 110px 30px;
   width: 100%;
   height: auto;
@@ -238,9 +238,6 @@ body {
 }
 #main .menu {
   /* La note enchantée */
-  /* Le chic à la française */
-  /* Le délice des poapilles */
-  /* La palettes du goût */
 }
 #main .menu-page-one {
   margin: 25px 25px 25px 25px;
@@ -344,87 +341,100 @@ body {
     margin: 20px 80px 120px 80px;
   }
 }
+#main .menu-title-one {
+  /* Le chic à la française */
+  /* Le délice des poapilles */
+  /* La palettes du goût */
+}
 #main .menu-title-one-bottom {
   margin: 20px auto 0px auto;
 }
+#main .menu-title-one-bottom .fas {
+  padding-right: 10px;
+}
 @media (min-width: 455px) {
-  #main .menu-two {
+  #main .menu-title-one-bottom .fas {
+    padding-right: 20px;
+  }
+}
+@media (min-width: 455px) {
+  #main .menu-title-one-two {
     padding: 0px 20px 50px 20px;
   }
-  #main .menu-two td:nth-child(1) {
+  #main .menu-title-one-two td:nth-child(1) {
     padding-left: 40px;
   }
-  #main .menu-two td:nth-child(2) {
+  #main .menu-title-one-two td:nth-child(2) {
     padding-right: 40px;
   }
 }
 @media (min-width: 871px) {
-  #main .menu-two {
+  #main .menu-title-one-two {
     padding: 0px 20px 50px 20px;
   }
-  #main .menu-two td:nth-child(1) {
+  #main .menu-title-one-two td:nth-child(1) {
     padding-left: 80px;
   }
-  #main .menu-two td:nth-child(2) {
+  #main .menu-title-one-two td:nth-child(2) {
     padding-right: 80px;
   }
 }
 @media (min-width: 871px) {
-  #main .menu-two {
+  #main .menu-title-one-two {
     margin: 20px 80px 120px 80px;
   }
 }
 @media (min-width: 455px) {
-  #main .menu-three {
+  #main .menu-title-one-three {
     padding: 0px 20px 50px 20px;
   }
-  #main .menu-three td:nth-child(1) {
+  #main .menu-title-one-three td:nth-child(1) {
     padding-left: 40px;
   }
-  #main .menu-three td:nth-child(2) {
+  #main .menu-title-one-three td:nth-child(2) {
     padding-right: 40px;
   }
 }
 @media (min-width: 871px) {
-  #main .menu-three {
+  #main .menu-title-one-three {
     padding: 0px 20px 50px 20px;
   }
-  #main .menu-three td:nth-child(1) {
+  #main .menu-title-one-three td:nth-child(1) {
     padding-left: 80px;
   }
-  #main .menu-three td:nth-child(2) {
+  #main .menu-title-one-three td:nth-child(2) {
     padding-right: 80px;
   }
 }
 @media (min-width: 871px) {
-  #main .menu-three {
+  #main .menu-title-one-three {
     margin: 20px 80px 120px 80px;
   }
 }
 @media (min-width: 455px) {
-  #main .menu-four {
+  #main .menu-title-one-four {
     padding: 0px 20px 50px 20px;
   }
-  #main .menu-four td:nth-child(1) {
+  #main .menu-title-one-four td:nth-child(1) {
     padding-left: 40px;
   }
-  #main .menu-four td:nth-child(2) {
+  #main .menu-title-one-four td:nth-child(2) {
     padding-right: 40px;
   }
 }
 @media (min-width: 871px) {
-  #main .menu-four {
+  #main .menu-title-one-four {
     padding: 0px 20px 50px 20px;
   }
-  #main .menu-four td:nth-child(1) {
+  #main .menu-title-one-four td:nth-child(1) {
     padding-left: 80px;
   }
-  #main .menu-four td:nth-child(2) {
+  #main .menu-title-one-four td:nth-child(2) {
     padding-right: 80px;
   }
 }
 @media (min-width: 871px) {
-  #main .menu-four {
+  #main .menu-title-one-four {
     margin: 20px 60px 120px 60px;
   }
 }
