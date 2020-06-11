@@ -15,6 +15,7 @@
     }
 
     .menu {
+
         @extend %menu-typography;
 
         @each $number, $margin in $margin-menu {

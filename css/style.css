@@ -14,13 +14,13 @@ body {
   @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=DM+Sans:wght@700&family=Dancing+Script:wght@700&family=Devonshire&family=Kaushan+Script&display=swap");
 }
 
+/* Tailles des menus */
 #main .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 100%;
 }
 
 #main .menu-title-one-bottom {
