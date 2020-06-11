@@ -9,13 +9,16 @@
     flex-direction: column;
     margin: $padding-main;
 
+
     h1 {
         margin: $margin-menu-h1;
     }
 
     .menu {
 
+
         @extend %menu-typography;
+
 
         @each $number, $margin in $margin-menu {
             &-page-#{$number} {
@@ -27,6 +30,7 @@
                 justify-content: center;
             }
         }
+
 
         table {
             min-width: 100%;
@@ -165,13 +169,22 @@
 
 
     #soon {
-        display: flex;
+        display: inline-block;
         border-radius: 10px 10px;
-        width: $width-soon;
-        height: $height-soon;
-        justify-content: center;
-        align-items: center;
-        margin: $margin-soon;
+        width: 300px;
+        height: 62.5px;
+        margin: 0 0 200px 0;
+
+
+        @media (min-width:$media-middle) {
+            display: flex;
+            border-radius: 10px 10px;
+            width: $width-soon;
+            height: $height-soon;
+            justify-content: center;
+            align-items: center;
+            margin: $margin-soon;
+        }
 
         p {
             margin-right: 10px;
