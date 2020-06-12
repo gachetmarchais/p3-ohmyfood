@@ -1,3 +1,13 @@
 ﻿body {
 }
- 
+@extend %menu-typography;
+@extend %menu-typography-small;
+
+@media (min-width:$media-large) {
+    width: 80%
+    ;
+    padding-left: 100px
+    ;
+    padding-right: 100px
+    ;
+}
