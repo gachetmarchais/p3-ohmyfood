@@ -16,7 +16,11 @@
     }
 
     &-title-one-bottom {
-        display: compact;
+        @extend %menu-title-bottom;
+
+        .fas {
+            @extend %menu-title-bottom-fas;
+        }
 
         p {
             @extend %menu-title-bottom-p;
