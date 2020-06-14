@@ -6,49 +6,46 @@
         text-decoration: none;
     }
 }
-#main {
-    max-width: 100%;
-    height: $height-body;
 
-    .menu {
-        @each $number, $background-color in $background-color-menu {
-            &-page-#{$number} {
-                background-color: $background-color;
-                @include shadow-menus;
-            }
-        }
-
-        @each $number, $color in $color-restaurant {
-            &-title-#{$number} h2 {
-                background: $color;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
-
-        @each $number, $color in $color-menu {
-            &-title-#{$number} h3 {
-                color: $color;
-            }
-        }
-
-        &-title-one {
-            @extend %animation-menu-title
-        }
-
-        &-title-two {
-            @extend %animation-menu-title
-        }
-
-        &-title-three {
-            @extend %animation-menu-title
-        }
-
-        &-title-four {
-            @extend %animation-menu-title
+.menu {
+    @each $number, $background-color in $background-color-menu {
+        &-page-#{$number} {
+            background-color: $background-color;
+            @include shadow-menus;
         }
     }
+
+    @each $number, $color in $color-restaurant {
+        &-title-#{$number} h2 {
+            background: $color;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    @each $number, $color in $color-menu {
+        &-title-#{$number} h3 {
+            color: $color;
+        }
+    }
+
+    &-title-one {
+        @extend %animation-menu-title;
+    }
+
+    &-title-two {
+        @extend %animation-menu-title;
+    }
+
+    &-title-three {
+        @extend %animation-menu-title;
+    }
+
+    &-title-four {
+        @extend %animation-menu-title;
+    }
 }
+
 
 .fa-music {
     background: linear-gradient(120deg, $color-note-left 40%, $color-note-right 75%);

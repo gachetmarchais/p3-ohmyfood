@@ -1,8 +1,78 @@
 ﻿body {
     @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=DM+Sans:wght@700&family=Dancing+Script:wght@700&family=Devonshire&family=Kaushan+Script&display=swap');
 }
-    /* Tailles des menus */
 
+/* taille et dispositions des menus */
+%header {
+    width: 100%;
+    display: flex;
+    background-color: $background-color-green;
+    justify-content: center;
+    align-items: center;
+    border-bottom: $border solid $border-header-footer;
+    color: $color-yellow;
+    height: $height-header*0.5;
+
+    @media (min-width:$media-middle) {
+        height: $height-header*0.7;
+    }
+
+    @media (min-width:$media-large) {
+        height: $height-header;
+    }
+}
+%footer {
+    position: initial;
+
+    @media (min-width:$media-middle) {
+        position: fixed;
+    }
+
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background-color-green;
+    border-top: $border solid $border-header-footer;
+    height: $height-footer*0.6;
+
+    @media (min-width:$media-middle) {
+        height: $height-footer*0.8;
+    }
+
+    @media (min-width:$media-large) {
+        height: $height-footer;
+    }
+}
+%bloc-menu {
+    width: $width-menu-table;
+
+    @media(min-width: $media-large) {
+        width: $width-menu-table-large;
+    }
+
+    height: $height-menu-table;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: $margin-menu-small;
+
+    @media (min-width:$media-middle) {
+        margin: $margin-menu-middle;
+    }
+
+    @media (min-width:$media-large) {
+        margin: $margin-menu-large;
+    }
+}
+
+%menu-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
 %menu-typography {
     text-align: center;
     display: flex;
@@ -10,33 +80,58 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
 }
 %menu-typography-small { /* ne sert pas*/
     width: 100%;
+
 }
 %menu-typography-large {/* ne sert pas*/
-    width: 900px;
+    width: 1100px;
     padding-left: 100px;
     padding-right: 100px;
 }
-
+/*Menu 1 - nom du restaurant bas de carte*/
 %menu-title-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %fonts-menu-title-one;
+    font-size: 20px;
+    font-weight: 600;
+
+    @media(min-width: $media-middle) {
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    @media(min-width: $media-large) {
+        font-size: 40px;
+    }
 }
-%typography-h3 {
+%menu-title-bottom-p {
+    margin-left: $margin-bottom-fas;
+
+    @media(min-width: $media-middle) {
+        margin-left: $margin-bottom-fas*1.5;
+    }
+
+    @media(min-width: $media-large) {
+        margin-left: $margin-bottom-fas*2;
+    }
+}
+    /*TAILLE DES H3 DANS LES TABLE*/
+%typography-h3-one {
     width: 60%;
+    display: inline-block;
+    transition: background-size 1s;
+
     @media(min-width: $media-middle) {
         width: 50%;
     }
+
     @media(min-width: $media-large) {
         width: 33%;
     }
-    display: inline-block;
-    transition: background-size 1s;
 }
-%typography-h3-caption {
+%typography-h3-caption-one {
     display: inline-block;
     content: "";
     width: 20%;
@@ -49,25 +144,106 @@
         width: 33%;
     }
 }
-    /* en rajouter si plus de menus */
-%beforeafter-caption-one {
-    height: 5px;
-    background-color: $background-color-caption-one;
-    @extend %typography-h3-caption;
+%typography-h3-two {
+    width: 60%;
+    display: inline-block;
+    transition: background-size 1s;
+
+    @media(min-width: $media-middle) {
+        width: 50%;
+    }
+
+    @media(min-width: $media-large) {
+        width: 38%;
+    }
 }
-%beforeafter-caption-two {
+%typography-h3-caption-two {
+    display: inline-block;
+    content: "";
+    width: 20%;
+
+    @media(min-width: $media-middle) {
+        width: 25%;
+    }
+
+    @media(min-width: $media-large) {
+        width: 31%;
+    }
+}
+%typography-h3-three {
+    
+    width: 60%;
+
+    @media(min-width: $media-middle) {
+        width: 50%;
+    }
+
+    @media(min-width: $media-large) {
+        width: 40%;
+    }
+
+    display: inline-block;
+    transition: background-size 1s;
+}
+%typography-h3-caption-three {
+    width: 20%;
+    display: inline-block;
+    content: "";
+
+    @media(min-width: $media-middle) {
+        width: 25%;
+    }
+
+    @media(min-width: $media-large) {
+        width: 30%;
+    }
+}
+%typography-h3-four {
+    width: 60%;
+
+    @media(min-width: $media-middle) {
+        width: 50%;
+    }
+
+    @media(min-width: $media-large) {
+        width: 42%;
+    }
+
+    display: inline-block;
+    transition: background-size 1s;
+}
+%typography-h3-caption-four {
+    width: 20%;
+    display: inline-block;
+    content: "";
+
+    @media(min-width: $media-middle) {
+        width: 25%;
+    }
+
+    @media(min-width: $media-large) {
+        width: 29%;
+    }
+}
+/* en rajouter si plus de menus */
+%beforeafter-one {
     height: 5px;
-    @extend %typography-h3-caption;
+    background-color: $background-color-one;
+    @extend %typography-h3-caption-one;
+}
+%beforeafter-two {
+    height: 5px;
+    @extend %typography-h3-caption-two;
 }
 
-%beforeafter-caption-three {
+%beforeafter-three {
     height: 5px;
-    @extend %typography-h3-caption;
+    @extend %typography-h3-caption-three;
 }
 
-%beforeafter-caption-four {
+%beforeafter-four {
     height: 5px;
-    @extend %typography-h3-caption;
+    @extend %typography-h3-caption-four;
 }
 /* ANIMATIONS */
 %animation-menu-title {
@@ -91,40 +267,82 @@
     font-family: calliope-mvb,sans-serif;
     font-style: normal;
     letter-spacing: 1px;
-    font-weight: 900;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 12px;
+    @media(min-width: $media-middle) {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    @media(min-width: $media-large) {
+        font-weight: 900;
+        font-size: 22px;
+    }
 }
 
 %fonts-menu-title-two {
     font-family: 'Croissant One', cursive;
+    font-size: $font-size-menu-home-two;    
 }
 
 %fonts-menu-table-two {
     font-family: noto-serif, serif;
-    font-weight: 500;
     font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    @media(min-width: $media-middle) {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    @media(min-width: $media-large) {
+        font-weight: 900;
+        font-size: 22px;
+    }
 }
 
 %fonts-menu-title-three {
     font-family: 'Dancing Script', cursive;
+    font-size: $font-size-menu-home-three;
 }
 
 %fonts-menu-table-three {
     font-family: calliope-mvb,sans-serif;
-    font-weight: 700;
     font-style: normal;
     letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 12px;
+
+    @media(min-width: $media-middle) {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    @media(min-width: $media-large) {
+        font-weight: 900;
+        font-size: 22px;
+    }
 }
 
 %fonts-menu-title-four {
     font-family: 'Kaushan Script', cursive;
+
 }
 
 %fonts-menu-table-four {
     font-family: calliope-mvb,sans-serif;
-    font-weight: 700;
     font-style: normal;
     letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 12px;
+
+    @media(min-width: $media-middle) {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    @media(min-width: $media-large) {
+        font-weight: 900;
+        font-size: 22px;
+    }
 }
 
 %ohmyfood {
@@ -184,20 +402,4 @@
     @media(min-width: $media-large) {
         font-size: 30px;
     }
-}
-/* taille et dispositions des menus */
-%bloc-menu {
-    margin: $margin-menu-page;
-    width: $width-menu-table;
-    height: $height-menu-table;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-%menu-table {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }

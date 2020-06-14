@@ -37,23 +37,23 @@ $color-four: linear-gradient(165deg, $color-four-left 15%, $color-four-right 55%
 
     /* couleurs des textes dans les menus */
 $color-text-one: $color-one;
-$color-text-two-caption-first: $color-menu-two;
-$color-text-two-caption-second: $color-two-middle;
-$color-text-two-caption-third: $color-two-right;
+$color-text-two-first: $color-menu-two;
+$color-text-two-second: $color-two-middle;
+$color-text-two-third: $color-two-right;
 $color-text-three: #000000;
 $color-text-four: #000000;
 
     /* couleurs des traits dans les menus  */ 
-$background-color-caption-one: $color-menu-one;
-$background-color-caption-two-first: $color-menu-two;
-$background-color-caption-two-second: $color-two-middle;
-$background-color-caption-two-third: $color-two-right;
-$background-color-caption-three-first: #0228dd;
-$background-color-caption-three-second: #0670f3;
-$background-color-caption-three-third: #229df9;
-$background-color-caption-four-before: linear-gradient(to right, $color-four-left 10%, $color-four-right 95%);
-$background-color-caption-four-after: linear-gradient(to left, $color-four-left 10%, $color-four-right 95%);
-$backgroung-color-caption-four-underline: $color-four-right;
+$background-color-one: $color-menu-one;
+$background-color-two-first: $color-menu-two;
+$background-color-two-second: $color-two-middle;
+$background-color-two-third: $color-two-right;
+$background-color-three-first: #0228dd;
+$background-color-three-second: #0670f3;
+$background-color-three-third: #229df9;
+$background-color-four-before: linear-gradient(to right, $color-four-left 10%, $color-four-right 95%);
+$background-color-four-after: linear-gradient(to left, $color-four-left 10%, $color-four-right 95%);
+$backgroung-color-four-underline: $color-four-right;
 
 /* MAP */
     /* rajouter des news menu au besoin*/
@@ -62,15 +62,15 @@ $color-menu: (one:$color-menu-one, two:$color-menu-two, three:$color-menu-three,
 $color-restaurant: (one:$color-one, two:$color-two, three:$color-three, four:$color-four);
 
 /* DIMENSIONS */
-$width-body: 100%;
+$width-body: 1rem;
 $height-body: 100%;
 
 $media-middle:455px;
-$media-large:871px;
+$media-large:1100px;
 
-$width-menu: 250px; /* à modifier au besoin */
+$width-menu: 20rem; /* à modifier au besoin */
 $width-menu-middle: $width-menu * (120/100);
-$width-menu-large: $width-menu * (200/100);
+$width-menu-large: $width-menu * (150/100);
 
 $height-menu: $width-menu * (150/100);
 $height-menu-middle: $height-menu * (120/100);
@@ -88,32 +88,40 @@ $height-footer-page: ($height-footer)-($border);
 $width-menu-table-column-left: 75%;
 $width-menu-table-column-price: 15%;
 
-$width-menu-table: 80%;
+$width-menu-table: 90%;
+$width-menu-table-large: 80%;
 $height-menu-table: auto;
+
 
 /* MARGIN & PADDING */
 $margin-initial: $width-menu * (10/100);
 $margin: $margin-initial $margin-initial $margin-initial $margin-initial;
-$padding-main: $margin-initial  $margin-initial $margin-initial*(500/100) $margin-initial;
-$margin-soon: $margin-initial $margin-initial $margin-initial * (800/100) $margin-initial;
+$padding-main: $margin-initial $margin-initial $margin-initial*(500/100) $margin-initial;
+$margin-soon-small: $margin-initial $margin-initial $margin-initial * (150/100) $margin-initial;
+$margin-soon-middle: $margin-initial $margin-initial $margin-initial * (500/100) $margin-initial;
+$margin-soon-large: $margin-initial $margin-initial $margin-initial * (800/100) $margin-initial;
 
     /* rajouter des news menu au besoin*/
 $margin-menu: (one: $margin, two: $margin, three: $margin, four: $margin); 
-$margin-menu-h1: 30px auto auto auto;
-$margin-menu-title: 40px auto 0px auto;
+$margin-menu-h1: 30px auto 20px auto;
+$margin-menu-h2-large: 20px auto 20px auto;
+$margin-menu-title: 40px auto 40px auto;
 $margin-menu-page: 20px 30px 200px 30px;
+$padding-menu-home: 0px 20px 50 px 20px;
 
-$margin-menu-one-bottom: 20px auto 0px auto;
-$padding-menu-one-bottom-fas: 10px;
+$margin-bottom-fas: 10px;
 $padding-menu-one-bottom-fas-middle: 20px;
-$margin-menu-one-desktop: 20px 80px 120px 80px;
-$padding-menu-one: 0px 80px 50px 80px;
+$margin-menu-small: 20px 15px 40px 15px;
+$margin-menu-middle: 20px 40px 130px 40px;
+$margin-menu-large: 20px 80px 150px 80px;
 
-$margin-menu-two-desktop: 20px 80px 120px 80px;
-$padding-menu-two: 0px 20px 50px 20px;
+    /*POLICES*/
+$font-size-menu-home-one:25px;
+$font-size-menu-home-two: 16px;
+$font-size-menu-home-three: 24px;
+$font-size-menu-home-four: 24px;
 
-$margin-menu-three-desktop: 20px 80px 120px 80px;
-$padding-menu-three: 0px 20px 50px 20px;
-
-$margin-menu-four-desktop: 20px 60px 120px 60px;
-$padding-menu-four: 0px 20px 50px 20px; 
+$font-size-menu-table-one:30px;
+$font-size-menu-table-two:30px;
+$font-size-menu-table-three:30px;
+$font-size-menu-table-four:30px;

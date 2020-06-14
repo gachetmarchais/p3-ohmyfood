@@ -1,4 +1,4 @@
-﻿
+﻿/*COULEURS TEXTE ET FONDS*/
 .menu {
     max-width: 100%;
     height: $height-body;
@@ -10,202 +10,202 @@
             @include shadow-menus;
         }
     }
-    &-title-one-bottom {
-        @extend %menu-title-bottom;
+
+    h1 {
+        margin: $margin-menu-h1;
     }
-    table {          
+
+    &-title-one-bottom {
+        display: compact;
+
+        p {
+            @extend %menu-title-bottom-p;
+        }
+    }
+
+    table {
         vertical-align: middle;
+
         th:nth-child(1) {
             width: 80%;
         }
+
         th:nth-child(2) {
             width: 20%;
         }
+
         td:nth-child(1) {
             text-align: start;
         }
+
         td:nth-child(2) {
             text-align: end;
-        }
-        h3 {
-            @extend %typography-h3
         }
     }
     /*couleurs dans menus à duppliquer pour chaque menu*/
     &-table {
         &-one {
             color: $color-text-one;
-            caption:before {
-                @extend %beforeafter-caption-one;
+
+            &-h3:before {
+                @extend %beforeafter-one;
             }
-            caption:after {
-                @extend %beforeafter-caption-one;
+
+            &-h3:after {
+                @extend %beforeafter-one;
             }
+
             h3 {
                 background: linear-gradient(to top, $color-text-one 0%, $color-text-one 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                @extend %typography-h3-one;
             }
+
             h3:hover {
                 background-size: 100% 100%;
             }
         }
 
         &-two {
-            table:nth-child(1) {
-                color: $color-text-two-caption-first;
+            &-h3:nth-child(1):before {
+                @extend %beforeafter-two;
+                background-color: $color-text-two-first;
+            }
 
+            &-h3:nth-child(1):after {
+                @extend %beforeafter-two;
+                background-color: $color-text-two-first;
+            }
+
+            &-h3:nth-child(1) {
                 h3 {
-                    background: linear-gradient(to top, $color-text-two-caption-first 0%, $color-text-two-caption-first 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                    color: $color-text-two-first;
+                    @extend %typography-h3-two;
+                    background: linear-gradient(to top, $color-text-two-first 0%, $color-text-two-first 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
                 }
+            }
 
-                h3:hover {
-                    background-size: 100% 100%;
-                }
+            &-h3:nth-child(3):before {
+                @extend %beforeafter-two;
+                background-color: $color-text-two-second;
+            }
 
-                caption:before {
-                    @extend %beforeafter-caption-two;
-                    background-color: $color-text-two-caption-first;
-                }
+            &-h3:nth-child(3):after {
+                @extend %beforeafter-two;
+                background-color: $color-text-two-second;
+            }
 
-                caption::after {
-                    @extend %beforeafter-caption-two;
-                    background-color: $color-text-two-caption-first;
+            &-h3:nth-child(3) {
+                h3 {
+                    color: $color-text-two-second;
+                    @extend %typography-h3-two;
+                    background: linear-gradient(to top, $color-text-two-second 0%, $color-text-two-second 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
                 }
+            }
+
+            &-h3:nth-child(5):before {
+                @extend %beforeafter-two;
+                background-color: $color-text-two-third;
+            }
+
+            &-h3:nth-child(5):after {
+                @extend %beforeafter-two;
+                background-color: $color-text-two-third;
+            }
+
+            &-h3:nth-child(5) {
+                h3 {
+                    color: $color-text-two-third;
+                    @extend %typography-h3-two;
+                    background: linear-gradient(to top, $color-text-two-third 0%, $color-text-two-third 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                }
+            }
+
+            h3:hover {
+                background-size: 100% 100%;
             }
 
             table:nth-child(2) {
-                color: $color-text-two-caption-second;
-
-                h3 {
-                    background: linear-gradient(to top, $color-text-two-caption-second 0%, $color-text-two-caption-second 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-                }
-
-                h3:hover {
-                    background-size: 100% 100%;
-                }
-
-                caption:before {
-                    @extend %beforeafter-caption-two;
-                    background-color: $color-text-two-caption-second;
-                }
-
-                caption::after {
-                    @extend %beforeafter-caption-two;
-                    background-color: $color-text-two-caption-second;
-                }
+                color: $color-text-two-first;
             }
 
-            table:nth-child(3) {
-                color: $color-text-two-caption-third;
+            table:nth-child(4) {
+                color: $color-text-two-second;
+            }
 
-                h3 {
-                    background: linear-gradient(to top, $color-text-two-caption-third 0%, $color-text-two-caption-third 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-                }
-
-                h3:hover {
-                    background-size: 100% 100%;
-                }
-
-                caption:before {
-                    @extend %beforeafter-caption-two;
-                    background-color: $color-text-two-caption-third;
-                }
-
-                caption::after {
-                    @extend %beforeafter-caption-two;
-                    background-color: $color-text-two-caption-third;
-                }
+            table:nth-child(6) {
+                color: $color-text-two-third;
             }
         }
 
-        &-three { 
+        &-three {
             color: $color-text-three;
 
-            table:nth-child(1) {
-                h3 {
-                    background: linear-gradient(to top, $background-color-caption-three-first 0%, $background-color-caption-three-first 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-                }
-
-                h3:hover {
-                    background-size: 100% 100%;
-                }
-
-                caption:before {
-                    @extend %beforeafter-caption-three;
-                    background-color: $background-color-caption-three-first; 
-                }
-
-                caption:after {
-                    @extend %beforeafter-caption-three;
-                    background-color: $background-color-caption-three-first; 
-                }
+            h3:nth-child(1) {
+                @extend %typography-h3-three;
             }
 
-            table:nth-child(2) {
-                h3 {
-                    background: linear-gradient(to top, $background-color-caption-three-second 0%, $background-color-caption-three-second 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-                }
-
-                h3:hover {
-                    background-size: 100% 100%;
-                }
-
-                caption:before {
-                    @extend %beforeafter-caption-three;
-                    background-color: $background-color-caption-three-second; 
-                }
-
-                caption:after {
-                    @extend %beforeafter-caption-three;
-                    background-color: $background-color-caption-three-second; 
-                }
+            &-h3:nth-child(1):before {
+                @extend %beforeafter-three;
+                background-color: $background-color-three-first;
             }
 
-            table:nth-child(3) {
-                h3 {
-                    background: linear-gradient(to top, $background-color-caption-three-second 0%, $background-color-caption-three-second 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-                }
+            &-h3:nth-child(1):after {
+                @extend %beforeafter-three;
+                background-color: $background-color-three-first;
+            }
 
-                h3:hover {
-                    background-size: 100% 100%;
-                }
 
-                caption:before {
-                    @extend %beforeafter-caption-three;
-                    background-color: $background-color-caption-three-third; 
-                }
+            &-h3:nth-child(3):before {
+                @extend %beforeafter-three;
+                background-color: $background-color-three-second;
+            }
 
-                caption:after {
-                    @extend %beforeafter-caption-three;
-                    background-color: $background-color-caption-three-third; 
-                }
+            &-h3:nth-child(3):after {
+                @extend %beforeafter-three;
+                background-color: $background-color-three-second;
+            }
+
+            &-h3:nth-child(5):before {
+                @extend %beforeafter-three;
+                background-color: $background-color-three-third;
+            }
+
+            &-h3:nth-child(5):after {
+                @extend %beforeafter-three;
+                background-color: $background-color-three-third;
+            }
+
+            h3:hover {
+                background-size: 100% 100%;
             }
         }
+
 
         &-four {
             color: $color-text-four;
 
-            table {
-                h3 {
-                    background: linear-gradient(to top, $backgroung-color-caption-four-underline 0%, $backgroung-color-caption-four-underline 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-                }
+            h3 {
+                @extend %typography-h3-four;
+                background: linear-gradient(to top, $backgroung-color-four-underline 0%, $backgroung-color-four-underline 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+            }
 
-                h3:hover {
-                    background-size: 100% 100%;
-                }
+            &-h3:before {
+                @extend %beforeafter-four;
+                background: $background-color-four-before;
+            }
 
-                caption:before {
-                    @extend %beforeafter-caption-four;
-                    background: $background-color-caption-four-before;
-                }
+            &-h3:after {
+                @extend %beforeafter-four;
+                background: $background-color-four-after;
+            }
 
-                caption:after {
-                    @extend %beforeafter-caption-four;
-                    background: $background-color-caption-four-after;
-                }
+            h3:hover {
+                background-size: 100% 100%;
             }
         }
     }
 }
+
 
             
        

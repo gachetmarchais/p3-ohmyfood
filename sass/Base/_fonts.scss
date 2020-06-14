@@ -1,7 +1,8 @@
-﻿.header{
+﻿/*POLICES*/
+.header{
     @extend %ohmyfood;
 }
-#footer-page {
+.footer {
     @extend %footer-page;
     a:nth-child(2)
     {
@@ -14,220 +15,258 @@
 #main > h1 {
     @extend %title;
 }
-.menu-title-one {
-    h2 {
-        @extend %fonts-menu-title-one;
-        font-size: 25px;
-    }
-    .fa-music {
-        font-size: 40px;
-    }
-    h3 {
-        @extend %fonts-menu-table-one;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-size: 30px;
-    }
-    &-page {
-        animation: none;
+/*la page home*/
+.menu {
+    &-title {
+        &-one {
+            h2 {
+                @extend %fonts-menu-title-one;
+                font-size: $font-size-menu-home-one;
 
-        h2 {
-            font-size: 40px;
-        }
+                @media(min-width: $media-middle) {
+                    font-size: $font-size-menu-home-one*1.2;
+                }
 
-        .fa-music {
-            font-size: 60px;
-        }
-    }
-
-    &-bottom {
-        @extend %fonts-menu-table-one;
-
-        @media(min-width: $media-middle) {
-            font-size: 22px;
-        }
-
-        @media(min-width: $media-large) {
-            font-size: 26px;
-        }
-    }
-}
-
-.menu-table-one {
-    @extend %fonts-menu-table-one;
-    line-height: 150%;
-
-    h3 {
-        @extend %fonts-menu-table-one;
-
-        @media(min-width: $media-middle) {
-            font-size: 22px;
-        }
-
-        @media(min-width: $media-large) {
-            font-size: 26px;
-        }
-    }
-
-    td {
-        font-size: 14px;
-
-        @media (min-width: $media-middle) {
-            font-size: 18px;
-        }
-
-        @media (min-width:$media-large) {
-            font-size: 22px;
-        }
-    }
-}
-.menu-title-two {
-    h2 {
-        @extend %fonts-menu-title-two;
-        font-size: 16px;
-    }
-    h3 {
-        @extend %fonts-menu-table-two;
-        font-size: 30px;
-        font-weight: 900;
-    }
-    &-page {
-        animation: none;
-
-        h2 {
-            font-size: 20px;
-            @media(min-width: $media-middle) {
-                font-size: 30px;
+                @media(min-width: $media-large) {
+                    font-size: $font-size-menu-home-one*2;
+                }
             }
 
-            @media(min-width: $media-large) {
+            .fa-music {
                 font-size: 40px;
             }
+
+            h3 {
+                @extend %fonts-menu-table-one;
+                text-transform: uppercase;            
+
+                @media(min-width: $media-middle) {
+                    font-size: $font-size-menu-table-one*1.2;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: $font-size-menu-table-one*2;
+                }
+            }
+
+            &-bottom {
+                @extend %menu-title-bottom;
+            }
+        }
+        &-two {
+            h2 {
+                @extend %fonts-menu-title-two;
+
+
+                @media(min-width: $media-middle) {
+                    font-size: $font-size-menu-home-two*1.2;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: $font-size-menu-home-two*2;
+                }
+            }
+
+            h3 {
+                @extend %fonts-menu-table-two;
+
+                @media(min-width: $media-middle) {
+                    font-size: $font-size-menu-table-two*1.2;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: $font-size-menu-table-two*2;
+                }
+            }
+        }
+        &-three {
+            h2 {
+                @extend %fonts-menu-title-three;
+
+                @media(min-width: $media-middle) {
+                    font-size: $font-size-menu-home-three*1.2;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: $font-size-menu-home-three*2;
+                }
+            }
+
+            h3 {
+                @extend %fonts-menu-table-three;
+
+                @media(min-width: $media-middle) {
+                    font-size: $font-size-menu-table-three*1.2;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: $font-size-menu-table-three*2;
+                }
+            }
+        }
+
+
+        &-four {
+            h2 {
+                @extend %fonts-menu-title-four;
+
+                @media(min-width: $media-middle) {
+                    font-size: $font-size-menu-home-four*1.2;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: $font-size-menu-home-four*2;
+                }
+            }
+
+            h3 {
+                @extend %fonts-menu-table-four;
+
+                @media(min-width: $media-middle) {
+                    font-size: $font-size-menu-table-four*1.2;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: $font-size-menu-table-four*2;
+                }
+            }
         }
     }
 }
 
-.menu-table-two {
-    @extend %fonts-menu-table-two;
-    line-height: 150%;
-    h3 {
-        font-size: 14px;
-        @media(min-width: $media-large) {
-            font-size: 22px;
+.menu {
+    &-table {
+        &-one {
+            @extend %fonts-menu-table-one;
+            line-height: 2;
+
+            &-h3 {
+                h3 {
+                    @extend %fonts-menu-table-one;
+                    font-size: 16px;
+
+                    @media(min-width: $media-middle) {
+                        font-size: 22px;
+                    }
+
+                    @media(min-width: $media-large) {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+
+        &-two {
+            @extend %fonts-menu-table-two;
+            line-height: 2;
+
+            h3 {
+                font-size: 14px;
+
+                @media(min-width: $media-middle) {
+                    font-size: 20px;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        &-three {
+            @extend %fonts-menu-table-three;
+            line-height: 2;
+
+            h3 {
+                font-size: 16px;
+
+                @media(min-width: $media-middle) {
+                    font-size: 20px;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &-four {
+            @extend %fonts-menu-table-four;
+            line-height: 2;
+
+            h3 {
+                font-size: 16px;
+
+                @media(min-width: $media-middle) {
+                    font-size: 20px;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: 26px;
+                }
+            }
         }
     }
-    td {
-        font-size: 14px;
-        @media (min-width:$media-large) {
-            font-size: 20px;
-        }
-    }
-}
-
-
-.menu-title-three {
-    h2 {
-        @extend %fonts-menu-title-three;
-        font-size: 24px;
-    }
-    h3 {
-        @extend %fonts-menu-table-three;
-        font-size: 30px;
-        font-weight: 900;
-    }
-    &-page {
-        animation: none;
-
+/* h2 dans les pages Menus */
+    &-one {
         h2 {
-            font-size: 34px;
+            @extend %fonts-menu-title-one;
+            font-size: $font-size-menu-home-one;
 
             @media(min-width: $media-middle) {
-                font-size: 50px;
+                font-size: $font-size-menu-home-one*2;
             }
 
             @media(min-width: $media-large) {
-                font-size: 70px;
+                font-size: $font-size-menu-home-one*3;
             }
         }
     }
-}
 
-.menu-table-three {
-    @extend %fonts-menu-table-three;
-    line-height: 150%;
-    h3 {
-        font-size: 16px;
-
-        @media(min-width: $media-middle) {
-            font-size: 18px;
-        }
-
-        @media(min-width: $media-large) {
-            font-size: 24px;
-        }
-    }
-    td {
-        font-size: 16px;
-
-        @media (min-width:$media-large) {
-            font-size: 22px;
-        }
-    }
-}
-
-.menu-title-four {
-    h2 {
-        @extend %fonts-menu-title-four;
-        font-size: 24px;
-    }
-
-    h3 {
-        @extend %fonts-menu-table-four;
-        font-size: 30px;
-        font-weight: 900;
-    }
-
-    &-page {
-        animation: none;
-
+    &-two {
         h2 {
-            font-size: 26px;
+            @extend %fonts-menu-title-two;
+
 
             @media(min-width: $media-middle) {
-                font-size: 50px;
+                font-size: $font-size-menu-home-two*2;
             }
 
             @media(min-width: $media-large) {
-                font-size: 70px;
+                font-size: $font-size-menu-home-two*3;
+            }
+        }
+    }
+
+    &-three {
+        h2 {
+            @extend %fonts-menu-title-three;
+
+            @media(min-width: $media-middle) {
+                font-size: $font-size-menu-home-three*2;
+            }
+
+            @media(min-width: $media-large) {
+                font-size: $font-size-menu-home-three*3;
+            }
+        }
+    }
+
+    &-four {
+        h2 {
+            @extend %fonts-menu-title-four;
+            font-size: $font-size-menu-home-four;
+
+            @media(min-width: $media-middle) {
+                font-size: $font-size-menu-home-four*2;
+            }
+
+            @media(min-width: $media-large) {
+                font-size: $font-size-menu-home-four*3;
             }
         }
     }
 }
 
-.menu-table-four {
-    @extend %fonts-menu-table-four;
-    line-height: 150%;
 
-    h3 {
-        font-size: 16px;
-
-        @media(min-width: $media-middle) {
-            font-size: 20px;
-        }
-
-        @media(min-width: $media-large) {
-            font-size: 26px;
-        }
-    }
-
-    td {
-        font-size: 16px;
-
-        @media (min-width:$media-large) {
-            font-size: 22px;
-        }
-    }
-}
-
-
-
+   

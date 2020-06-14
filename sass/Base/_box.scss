@@ -11,18 +11,18 @@ h1 {
     /*HOME*/
 #main {
     @extend %menu-typography;
+    max-width: 100%;
+    height: 100%; 
+
     .menu {
+
         @each $number, $margin in $margin-menu {
             &-page-#{$number} {
                 margin: $margin;
                 width: $width-menu;
                 height: $height-menu;
 
-                @media (min-width:$media-middle) {
-                    width: $width-menu-middle;
-                    height: $height-menu-middle;
-                }
-
+               
                 @media (min-width:$media-large) {
                     width: $width-menu-large;
                     height: $height-menu-large;
@@ -31,17 +31,17 @@ h1 {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                padding: $padding-menu-home;
             }
         }
+
     }
 }
     /*PAGES*/
 
 .menu {
-    margin: auto;
+
     @extend %menu-typography;
-
-
 
     table {
         td:nth-child(1) {
@@ -51,6 +51,14 @@ h1 {
         td:nth-child(2) {
             width: $width-menu-table-column-price;
         }
+        /*rajouter un margin-top*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        @media (min-width:$media-large) {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
     }
 
     section:nth-child(1) {
@@ -59,30 +67,28 @@ h1 {
 
     section:nth-child(2) {
         @extend %menu-table;
+        width: 90%;
     }
     /* La note enchantée */
+    h2 {
+        @media (min-width:$media-large) {
+            margin: $margin-menu-h2-large;
+        }
+    }
+
     &-one {
         @extend %bloc-menu;
 
-        @media (min-width:$media-middle) {
-            padding: $padding-menu-one;
+        * {
+            margin: auto;
+            width: 100%;
         }
+        section:nth-child(2) {
+            @extend %menu-table;
+            width: 95%;
 
-        @media (min-width:$media-large) {
-            margin: $margin-menu-one-desktop;
-        }
-    }
-
-    &-title-one {
-        &-bottom {
-            margin: $margin-menu-one-bottom;
-
-            .fas {
-                padding-right: $padding-menu-one-bottom-fas;
-
-                @media (min-width:$media-middle) {
-                    padding-right: $padding-menu-one-bottom-fas-middle;
-                }
+            @media (min-width:$media-large) {
+                width: 80%;
             }
         }
     }
@@ -90,8 +96,12 @@ h1 {
     &-two {
         @extend %bloc-menu;
 
+        * {
+            margin: auto;
+            width: 100%;
+        }
+
         @media (min-width:$media-middle) {
-            padding: $padding-menu-two;
 
             td:nth-child(1) {
                 padding-left: 40px;
@@ -103,8 +113,6 @@ h1 {
         }
 
         @media (min-width:$media-large) {
-            padding: $padding-menu-two;
-
             td:nth-child(1) {
                 padding-left: 80px;
             }
@@ -114,17 +122,25 @@ h1 {
             }
         }
 
-        @media (min-width:$media-large) {
-            margin: $margin-menu-two-desktop;
+        section:nth-child(2) {
+            @extend %menu-table;
+            width: 95%;
+
+            @media (min-width:$media-large) {
+                width: 90%;
+            }
         }
     }
     /* Le délice des poapilles */
     &-three {
         @extend %bloc-menu;
 
-        @media (min-width:$media-middle) {
-            padding: $padding-menu-three;
+        * {
+            margin: auto;
+            width: 100%;
+        }
 
+        @media (min-width:$media-middle) {
             td:nth-child(1) {
                 padding-left: 40px;
             }
@@ -135,8 +151,6 @@ h1 {
         }
 
         @media (min-width:$media-large) {
-            padding: $padding-menu-three;
-
             td:nth-child(1) {
                 padding-left: 80px;
             }
@@ -146,17 +160,29 @@ h1 {
             }
         }
 
-        @media (min-width:$media-large) {
-            margin: $margin-menu-three-desktop;
+        section:nth-child(2) {
+            @extend %menu-table;
+            width: 95%;
+
+            @media (min-width:$media-large) {
+                width: 90%;
+            }
+        }
+
+        .menu-table-three {
+            margin: auto;
         }
     }
     /* La palettes du goût */
     &-four {
         @extend %bloc-menu;
 
-        @media (min-width:$media-middle) {
-            padding: $padding-menu-four;
+        * {
+            margin: auto;
+            width: 100%;
+        }
 
+        @media (min-width:$media-middle) {
             td:nth-child(1) {
                 padding-left: 40px;
             }
@@ -167,8 +193,6 @@ h1 {
         }
 
         @media (min-width:$media-large) {
-            padding: $padding-menu-four;
-
             td:nth-child(1) {
                 padding-left: 80px;
             }
@@ -178,20 +202,28 @@ h1 {
             }
         }
 
-        @media (min-width:$media-large) {
-            margin: $margin-menu-four-desktop;
+        section:nth-child(2) {
+            @extend %menu-table;
+            width: 95%;
+
+            @media (min-width:$media-large) {
+                width: 90%;
+            }
+        }
+
+        .menu-table-four {
+            margin: auto;
         }
     }
 }
 
 
 #soon {
-    display: inline-block;
+    display: ruby;
     border-radius: 10px 10px;
     width: 300px;
     height: 62.5px;
-    margin: 0 0 200px 0;
-
+    margin: $margin-soon-small;
 
     @media (min-width:$media-middle) {
         display: flex;
@@ -200,7 +232,11 @@ h1 {
         height: $height-soon;
         justify-content: center;
         align-items: center;
-        margin: $margin-soon;
+        margin: $margin-soon-middle;
+    }
+
+    @media (min-width:$media-large) {
+        margin: $margin-soon-large;
     }
 
     p {

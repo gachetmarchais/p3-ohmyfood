@@ -1,28 +1,9 @@
 ﻿.header {
-    height: $height-header;
-    width: 100%;
-    display: flex;
-    background-color: $background-color-green;
-    justify-content: center;
-    align-items: center;
-    border-bottom: $border solid $border-header-footer;
-    color: $color-yellow;
+    @extend %header;   
 }
 
 .footer {
-    position: initial;
-    @media (min-width:$media-middle) {
-        position: fixed;
-    }
-
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    height: $height-footer;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $background-color-green;
-    border-top: $border solid $border-header-footer;
+    @extend %footer;
 
     a {
         color: $color-yellow;
