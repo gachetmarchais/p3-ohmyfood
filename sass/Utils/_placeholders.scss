@@ -83,20 +83,13 @@
     align-items: center;
 
 }
-%menu-typography-small { /* ne sert pas*/
-    width: 100%;
 
-}
-%menu-typography-large {/* ne sert pas*/
-    width: 1100px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
+
 /*Menu 1 - nom du restaurant bas de carte*/
 %menu-title-bottom {
+ 
     display: flex;
-    justify-content: center;
-    align-items: center;
+
     @extend %fonts-menu-title-one;
     font-size: 20px;
     font-weight: 600;
@@ -110,16 +103,12 @@
         font-size: 40px;
     }
 }
-%menu-title-bottom-fas {
-    width: 40%;
-    display:flex;
-    justify-content:flex-end;
-
+%menu-title-bottom-fas {    
+    display: block;
+   
 }
 %menu-title-bottom-p {
-    width: 60%;
-    display: flex;
-    justify-content:flex-start;
+    display: block;
     margin-left: $margin-bottom-fas;
 
     @media(min-width: $media-middle) {

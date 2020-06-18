@@ -12,9 +12,12 @@ h1 {
 #main {
     @extend %menu-typography;
     max-width: 100%;
-    height: 100%; 
+    height: 100%;
 
     .menu {
+        max-width: 80%;
+        height: $height-body;
+
 
         @each $number, $margin in $margin-menu {
             &-page-#{$number} {
@@ -22,7 +25,7 @@ h1 {
                 width: $width-menu;
                 height: $height-menu;
 
-               
+
                 @media (min-width:$media-large) {
                     width: $width-menu-large;
                     height: $height-menu-large;
@@ -34,12 +37,13 @@ h1 {
                 padding: $padding-menu-home;
             }
         }
-
     }
 }
     /*PAGES*/
 
 .menu {
+    max-width: 100%;
+    height: $height-body;
 
     @extend %menu-typography;
 
@@ -81,15 +85,16 @@ h1 {
 
         * {
             margin: auto;
-            width: 100%;
+          
         }
+
         section:nth-child(2) {
             @extend %menu-table;
             width: 95%;
 
             @media (min-width:$media-large) {
                 width: 80%;
-            }
+            }         
         }
     }
     /* Le chic à la française */

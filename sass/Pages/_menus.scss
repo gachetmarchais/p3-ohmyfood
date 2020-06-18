@@ -1,7 +1,5 @@
 ﻿/*COULEURS TEXTE ET FONDS*/
 .menu {
-    max-width: 100%;
-    height: $height-body;
     margin: 0;
 
     @each $number, $background-color in $background-color-menu {
@@ -50,7 +48,9 @@
     &-table {
         &-one {
             color: $color-text-one;
-
+            &-h3{
+                width: 100%;
+            }
             &-h3:before {
                 @extend %beforeafter-one;
             }

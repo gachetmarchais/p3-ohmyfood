@@ -121,8 +121,6 @@ body {
 /*Menu 1 - nom du restaurant bas de carte*/
 .menu-title-one-bottom {
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 20px;
   font-weight: 600;
 }
@@ -139,15 +137,11 @@ body {
 }
 
 .menu-title-one-bottom .fas {
-  width: 40%;
-  display: flex;
-  justify-content: flex-end;
+  display: block;
 }
 
 .menu-title-one-bottom p {
-  width: 60%;
-  display: flex;
-  justify-content: flex-start;
+  display: block;
   margin-left: 10px;
 }
 @media (min-width: 455px) {
@@ -501,6 +495,10 @@ h1 {
   max-width: 100%;
   height: 100%;
 }
+#main .menu {
+  max-width: 80%;
+  height: 100%;
+}
 #main .menu-page-one {
   margin: 2rem 2rem 2rem 2rem;
   width: 20rem;
@@ -508,7 +506,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 20px 50 px 20px;
+  padding: 0px 20px 50px 20px;
 }
 @media (min-width: 1100px) {
   #main .menu-page-one {
@@ -523,7 +521,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 20px 50 px 20px;
+  padding: 0px 20px 50px 20px;
 }
 @media (min-width: 1100px) {
   #main .menu-page-two {
@@ -538,7 +536,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 20px 50 px 20px;
+  padding: 0px 20px 50px 20px;
 }
 @media (min-width: 1100px) {
   #main .menu-page-three {
@@ -553,7 +551,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 20px 50 px 20px;
+  padding: 0px 20px 50px 20px;
 }
 @media (min-width: 1100px) {
   #main .menu-page-four {
@@ -564,6 +562,8 @@ h1 {
 
 /*PAGES*/
 .menu {
+  max-width: 100%;
+  height: 100%;
   /* La note enchantée */
   /* Le chic à la française */
   /* Le délice des poapilles */
@@ -599,7 +599,6 @@ h1 {
 }
 .menu-one * {
   margin: auto;
-  width: 100%;
 }
 .menu-one section:nth-child(2) {
   width: 95%;
@@ -1060,8 +1059,6 @@ h1 {
 
 /*COULEURS TEXTE ET FONDS*/
 .menu {
-  max-width: 100%;
-  height: 100%;
   margin: 0;
   /*couleurs dans menus à duppliquer pour chaque menu*/
 }
@@ -1101,6 +1098,9 @@ h1 {
 }
 .menu-table-one {
   color: #3c1218;
+}
+.menu-table-one-h3 {
+  width: 100%;
 }
 .menu-table-one h3 {
   background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom/0 100%;
