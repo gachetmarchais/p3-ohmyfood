@@ -87,21 +87,11 @@
 
 /*Menu 1 - nom du restaurant bas de carte*/
 %menu-title-bottom {
- 
     display: flex;
 
     @extend %fonts-menu-title-one;
     font-size: 20px;
     font-weight: 600;
-
-    @media(min-width: $media-middle) {
-        font-size: 24px;
-        font-weight: 900;
-    }
-
-    @media(min-width: $media-large) {
-        font-size: 40px;
-    }
 }
 %menu-title-bottom-fas {    
     display: block;
@@ -109,15 +99,7 @@
 }
 %menu-title-bottom-p {
     display: block;
-    margin-left: $margin-bottom-fas;
-
-    @media(min-width: $media-middle) {
-        margin-left: $margin-bottom-fas*1.5;
-    }
-
-    @media(min-width: $media-large) {
-        margin-left: $margin-bottom-fas*2;
-    }
+   
 }
     /*TAILLE DES H3 DANS LES TABLE*/
 %typography-h3-one {

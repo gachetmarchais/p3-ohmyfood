@@ -15,6 +15,18 @@
 
     &-title-one-bottom {
         @extend %menu-title-bottom;
+        margin-top: 20px;
+
+        @media(min-width: $media-middle) {
+            font-size: 24px;
+            font-weight: 900;
+            margin-top: 40px;
+        }
+
+        @media(min-width: $media-large) {
+            font-size: 40px;
+            margin-top: 70px;
+        }
 
         .fas {
             @extend %menu-title-bottom-fas;
@@ -22,6 +34,15 @@
 
         p {
             @extend %menu-title-bottom-p;
+            margin-left: $margin-bottom-fas;
+
+            @media(min-width: $media-middle) {
+                margin-left: $margin-bottom-fas*1.5;
+            }
+
+            @media(min-width: $media-large) {
+                margin-left: $margin-bottom-fas*2;
+            }
         }
     }
 
@@ -48,9 +69,11 @@
     &-table {
         &-one {
             color: $color-text-one;
-            &-h3{
+
+            &-h3 {
                 width: 100%;
             }
+
             &-h3:before {
                 @extend %beforeafter-one;
             }
