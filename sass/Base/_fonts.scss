@@ -12,7 +12,7 @@
 #soon {
     @extend %soon;
 }
-#main > h1 {
+.title-page {
     @extend %title;
 }
 /*la page home*/
@@ -133,7 +133,7 @@
         }
     }
 }
-
+/*les pages de menus*/
 .menu {
     &-table {
         &-one {
