@@ -27,6 +27,10 @@
                 width: $width-menu;
                 height: $height-menu;
 
+                @media (min-width:$media-middle) {
+                    width: $width-menu-middle;
+                    height: $height-menu-middle;
+                }
 
                 @media (min-width:$media-large) {
                     width: $width-menu-large;
