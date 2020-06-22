@@ -29,7 +29,7 @@
             @extend %menu-title-bottom-fas;
         }
 
-        p {
+        h4 {
             @extend %menu-title-bottom-p;
             margin-left: $margin-bottom-fas;
 
@@ -164,8 +164,14 @@
         &-three {
             color: $color-text-three;
 
-            h3:nth-child(1) {
+            h3 {
                 @extend %typography-h3-three;
+            }
+
+            &-h3:nth-child(1) {
+                h3 {
+                    background: linear-gradient(to top, $background-color-three-first 0%, $background-color-three-first 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                }
             }
 
             &-h3:nth-child(1):before {
@@ -178,6 +184,11 @@
                 background-color: $background-color-three-first;
             }
 
+            &-h3:nth-child(3) {
+                h3 {
+                    background: linear-gradient(to top, $background-color-three-second 0%, $background-color-three-second 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                }
+            }
 
             &-h3:nth-child(3):before {
                 @extend %beforeafter-three;
@@ -192,6 +203,12 @@
             &-h3:nth-child(5):before {
                 @extend %beforeafter-three;
                 background-color: $background-color-three-third;
+            }
+
+            &-h3:nth-child(5) {
+                h3 {
+                    background: linear-gradient(to top, $background-color-three-third 0%, $background-color-three-third 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+                }
             }
 
             &-h3:nth-child(5):after {

@@ -165,8 +165,9 @@
     }
 }
 %typography-h3-three {
-    
     width: 60%;
+    display: inline-block;
+    transition: background-size 1s;
 
     @media(min-width: $media-middle) {
         width: 50%;
