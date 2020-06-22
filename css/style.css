@@ -11,7 +11,7 @@
 /* MARGIN & PADDING */
 /* rajouter des news menu au besoin*/
 /*POLICES*/
-/* taille et dispositions des menus */
+/* taille et dispositions des block */
 .header {
   width: 100%;
   display: flex;
@@ -39,10 +39,11 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   background-color: #579c87;
   border-top: 0.18rem solid #a1c181;
-  height: 3.15rem;
+  height: 5.25rem;
 }
 @media (min-width: 455px) {
   .footer {
@@ -52,6 +53,14 @@
 @media (min-width: 455px) {
   .footer {
     height: 4.2rem;
+    justify-content: space-between;
+    flex-direction: initial;
+  }
+  .footer a:nth-child(1) {
+    margin-left: 30px;
+  }
+  .footer a:nth-child(2) {
+    margin-right: 40px;
   }
 }
 @media (min-width: 1170px) {
@@ -711,6 +720,21 @@ body {
   margin-right: 10px;
 }
 
+.legal-notice {
+  display: block;
+  margin: 20px 40px 60px 40px;
+}
+@media (min-width: 455px) {
+  .legal-notice {
+    margin: 20px 40px 100px 40px;
+  }
+}
+@media (min-width: 1170px) {
+  .legal-notice {
+    margin: 20px 40px 120px 40px;
+  }
+}
+
 /*POLICES*/
 /*la page home*/
 .menu-title-one h2 {
@@ -920,6 +944,7 @@ body {
 
 .footer a {
   color: #fdcb46;
+  margin: 5px auto 5px auto;
 }
 .footer a:hover {
   animation: wiggle 0.3s;
@@ -938,12 +963,6 @@ body {
   100% {
     transform: rotate(0deg);
   }
-}
-.footer a:nth-child(1) {
-  padding-left: 40px;
-}
-.footer a:nth-child(2) {
-  padding-right: 40px;
 }
 
 #body {

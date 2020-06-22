@@ -79,19 +79,18 @@
         @extend %menu-table;
         width: 90%;
     }
-    /* La note enchantée */
+
     h2 {
         @media (min-width:$media-large) {
             margin: $margin-menu-h2-large;
         }
     }
-
+    /* La note enchantée */
     &-one {
         @extend %bloc-menu;
 
         * {
             margin: auto;
-          
         }
 
         section:nth-child(2) {
@@ -100,7 +99,7 @@
 
             @media (min-width:$media-large) {
                 width: 80%;
-            }         
+            }
         }
     }
     /* Le chic à la française */
@@ -255,7 +254,18 @@
     }
 }
 
+.legal-notice {
+    display: block;
+    margin: 20px 40px 60px 40px;
 
+    @media (min-width:$media-middle) {
+        margin: 20px 40px 100px 40px;
+    }
+
+    @media (min-width:$media-large) {
+        margin: 20px 40px 120px 40px;
+    }
+}
 
  
    
