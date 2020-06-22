@@ -255,16 +255,7 @@
 }
 
 .legal-notice {
-    display: block;
-    margin: 20px 40px 60px 40px;
-
-    @media (min-width:$media-middle) {
-        margin: 20px 40px 100px 40px;
-    }
-
-    @media (min-width:$media-large) {
-        margin: 20px 40px 120px 40px;
-    }
+    @extend %legal-notice;
 }
 
  

@@ -93,7 +93,32 @@
     align-items: center;
 
 }
+%legal-notice {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 20px 20px 60px 20px;
 
+    @media (min-width:$media-middle) {
+        margin: 20px 40px 100px 40px;
+    }
+
+    @media (min-width:$media-large) {
+        margin: 20px 60px 120px 60px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        padding-left: 0px;
+
+        @media (min-width:$media-large) {
+            padding: 0px 60px 0px 60px;
+        }
+    }
+}
 
 /*Menu 1 - nom du restaurant bas de carte*/
 %menu-title-bottom {
@@ -398,3 +423,4 @@
         font-size: 30px;
     }
 }
+

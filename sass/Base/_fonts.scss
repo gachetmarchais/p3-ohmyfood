@@ -16,138 +16,217 @@
 .title-page {
     @extend %title;
 }
-/*la page home*/
-.menu {
-    &-title {
-        &-one {
-            h2 {
-                @extend %fonts-menu-title-one;
-                font-size: $font-size-menu-home-one;
+.legal-notice {
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0px;
 
-                @media(min-width: $media-middle) {
-                    font-size: $font-size-menu-home-one*1.2;
-                }
+    h2 {
+        @extend %title;
+    }
 
-                @media(min-width: $media-large) {
-                    font-size: $font-size-menu-home-one*2;
-                }
-            }
+    span, h3 {
+        font-weight: bolder;
+    }
 
-            .fa-music {
-                font-size: 40px;
-            }
+    a{
+        text-decoration: none;
+    }
 
-            h3 {
-                @extend %fonts-menu-table-one;
-                text-transform: uppercase;            
+    ul {
+        list-style-type: none;
+        font-size: 14px;
 
-                @media(min-width: $media-middle) {
-                    font-size: $font-size-menu-table-one*1.2;
-                }
-
-                @media(min-width: $media-large) {
-                    font-size: $font-size-menu-table-one*2;
-                }
-            }
-
-            &-bottom {
-                @extend %menu-title-bottom;
-            }
+        @media(min-width: $media-middle) {
+            font-size: 16px;
         }
-        &-two {
-            h2 {
-                @extend %fonts-menu-title-two;
+    }
+}
+    /*la page home*/
+    .menu {
+        &-title {
+            &-one {
+                h2 {
+                    @extend %fonts-menu-title-one;
+                    font-size: $font-size-menu-home-one;
 
+                    @media(min-width: $media-middle) {
+                        font-size: $font-size-menu-home-one*1.2;
+                    }
 
-                @media(min-width: $media-middle) {
-                    font-size: $font-size-menu-home-two*1.2;
+                    @media(min-width: $media-large) {
+                        font-size: $font-size-menu-home-one*2;
+                    }
                 }
 
-                @media(min-width: $media-large) {
-                    font-size: $font-size-menu-home-two*2;
-                }
-            }
-
-            h3 {
-                @extend %fonts-menu-table-two;
-
-                @media(min-width: $media-middle) {
-                    font-size: $font-size-menu-table-two*1.2;
+                .fa-music {
+                    font-size: 40px;
                 }
 
-                @media(min-width: $media-large) {
-                    font-size: $font-size-menu-table-two*2;
-                }
-            }
-        }
-        &-three {
-            h2 {
-                @extend %fonts-menu-title-three;
+                h3 {
+                    @extend %fonts-menu-table-one;
+                    text-transform: uppercase;
 
-                @media(min-width: $media-middle) {
-                    font-size: $font-size-menu-home-three*1.2;
-                }
+                    @media(min-width: $media-middle) {
+                        font-size: $font-size-menu-table-one*1.2;
+                    }
 
-                @media(min-width: $media-large) {
-                    font-size: $font-size-menu-home-three*2;
-                }
-            }
-
-            h3 {
-                @extend %fonts-menu-table-three;
-
-                @media(min-width: $media-middle) {
-                    font-size: $font-size-menu-table-three*1.2;
+                    @media(min-width: $media-large) {
+                        font-size: $font-size-menu-table-one*2;
+                    }
                 }
 
-                @media(min-width: $media-large) {
-                    font-size: $font-size-menu-table-three*2;
-                }
-            }
-        }
-
-
-        &-four {
-            h2 {
-                @extend %fonts-menu-title-four;
-
-                @media(min-width: $media-middle) {
-                    font-size: $font-size-menu-home-four*1.2;
-                }
-
-                @media(min-width: $media-large) {
-                    font-size: $font-size-menu-home-four*2;
+                &-bottom {
+                    @extend %menu-title-bottom;
                 }
             }
 
-            h3 {
-                @extend %fonts-menu-table-four;
+            &-two {
+                h2 {
+                    @extend %fonts-menu-title-two;
 
-                @media(min-width: $media-middle) {
-                    font-size: $font-size-menu-table-four*1.2;
+
+                    @media(min-width: $media-middle) {
+                        font-size: $font-size-menu-home-two*1.2;
+                    }
+
+                    @media(min-width: $media-large) {
+                        font-size: $font-size-menu-home-two*2;
+                    }
                 }
 
-                @media(min-width: $media-large) {
-                    font-size: $font-size-menu-table-four*2;
+                h3 {
+                    @extend %fonts-menu-table-two;
+
+                    @media(min-width: $media-middle) {
+                        font-size: $font-size-menu-table-two*1.2;
+                    }
+
+                    @media(min-width: $media-large) {
+                        font-size: $font-size-menu-table-two*2;
+                    }
+                }
+            }
+
+            &-three {
+                h2 {
+                    @extend %fonts-menu-title-three;
+
+                    @media(min-width: $media-middle) {
+                        font-size: $font-size-menu-home-three*1.2;
+                    }
+
+                    @media(min-width: $media-large) {
+                        font-size: $font-size-menu-home-three*2;
+                    }
+                }
+
+                h3 {
+                    @extend %fonts-menu-table-three;
+
+                    @media(min-width: $media-middle) {
+                        font-size: $font-size-menu-table-three*1.2;
+                    }
+
+                    @media(min-width: $media-large) {
+                        font-size: $font-size-menu-table-three*2;
+                    }
+                }
+            }
+
+
+            &-four {
+                h2 {
+                    @extend %fonts-menu-title-four;
+
+                    @media(min-width: $media-middle) {
+                        font-size: $font-size-menu-home-four*1.2;
+                    }
+
+                    @media(min-width: $media-large) {
+                        font-size: $font-size-menu-home-four*2;
+                    }
+                }
+
+                h3 {
+                    @extend %fonts-menu-table-four;
+
+                    @media(min-width: $media-middle) {
+                        font-size: $font-size-menu-table-four*1.2;
+                    }
+
+                    @media(min-width: $media-large) {
+                        font-size: $font-size-menu-table-four*2;
+                    }
                 }
             }
         }
     }
-}
-/*les pages de menus*/
-.menu {
-    &-table {
-        &-one {
-            @extend %fonts-menu-table-one;
-            line-height: 2;
+    /*les pages de menus*/
+    .menu {
+        &-table {
+            &-one {
+                @extend %fonts-menu-table-one;
+                line-height: 2;
 
-            &-h3 {
+                &-h3 {
+                    h3 {
+                        @extend %fonts-menu-table-one;
+                        font-size: 16px;
+
+                        @media(min-width: $media-middle) {
+                            font-size: 22px;
+                        }
+
+                        @media(min-width: $media-large) {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+
+            &-two {
+                @extend %fonts-menu-table-two;
+                line-height: 2;
+
                 h3 {
-                    @extend %fonts-menu-table-one;
+                    font-size: 14px;
+
+                    @media(min-width: $media-middle) {
+                        font-size: 20px;
+                    }
+
+                    @media(min-width: $media-large) {
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            &-three {
+                @extend %fonts-menu-table-three;
+                line-height: 2;
+
+                h3 {
                     font-size: 16px;
 
                     @media(min-width: $media-middle) {
-                        font-size: 22px;
+                        font-size: 20px;
+                    }
+
+                    @media(min-width: $media-large) {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            &-four {
+                @extend %fonts-menu-table-four;
+                line-height: 2;
+
+                h3 {
+                    font-size: 16px;
+
+                    @media(min-width: $media-middle) {
+                        font-size: 20px;
                     }
 
                     @media(min-width: $media-large) {
@@ -156,118 +235,66 @@
                 }
             }
         }
-
-        &-two {
-            @extend %fonts-menu-table-two;
-            line-height: 2;
-
-            h3 {
-                font-size: 14px;
+        /* h2 dans les pages Menus */
+        &-one {
+            h2 {
+                @extend %fonts-menu-title-one;
+                font-size: $font-size-menu-home-one;
 
                 @media(min-width: $media-middle) {
-                    font-size: 20px;
+                    font-size: $font-size-menu-home-one*2;
                 }
 
                 @media(min-width: $media-large) {
-                    font-size: 22px;
+                    font-size: $font-size-menu-home-one*3;
+                }
+            }
+        }
+
+        &-two {
+            h2 {
+                @extend %fonts-menu-title-two;
+
+
+                @media(min-width: $media-middle) {
+                    font-size: $font-size-menu-home-two*2;
+                }
+
+                @media(min-width: $media-large) {
+                    font-size: $font-size-menu-home-two*3;
                 }
             }
         }
 
         &-three {
-            @extend %fonts-menu-table-three;
-            line-height: 2;
-
-            h3 {
-                font-size: 16px;
+            h2 {
+                @extend %fonts-menu-title-three;
 
                 @media(min-width: $media-middle) {
-                    font-size: 20px;
+                    font-size: $font-size-menu-home-three*2;
                 }
 
                 @media(min-width: $media-large) {
-                    font-size: 24px;
+                    font-size: $font-size-menu-home-three*3;
                 }
             }
         }
 
         &-four {
-            @extend %fonts-menu-table-four;
-            line-height: 2;
-
-            h3 {
-                font-size: 16px;
+            h2 {
+                @extend %fonts-menu-title-four;
+                font-size: $font-size-menu-home-four;
 
                 @media(min-width: $media-middle) {
-                    font-size: 20px;
+                    font-size: $font-size-menu-home-four*2;
                 }
 
                 @media(min-width: $media-large) {
-                    font-size: 26px;
+                    font-size: $font-size-menu-home-four*3;
                 }
             }
         }
     }
-/* h2 dans les pages Menus */
-    &-one {
-        h2 {
-            @extend %fonts-menu-title-one;
-            font-size: $font-size-menu-home-one;
-
-            @media(min-width: $media-middle) {
-                font-size: $font-size-menu-home-one*2;
-            }
-
-            @media(min-width: $media-large) {
-                font-size: $font-size-menu-home-one*3;
-            }
-        }
-    }
-
-    &-two {
-        h2 {
-            @extend %fonts-menu-title-two;
-
-
-            @media(min-width: $media-middle) {
-                font-size: $font-size-menu-home-two*2;
-            }
-
-            @media(min-width: $media-large) {
-                font-size: $font-size-menu-home-two*3;
-            }
-        }
-    }
-
-    &-three {
-        h2 {
-            @extend %fonts-menu-title-three;
-
-            @media(min-width: $media-middle) {
-                font-size: $font-size-menu-home-three*2;
-            }
-
-            @media(min-width: $media-large) {
-                font-size: $font-size-menu-home-three*3;
-            }
-        }
-    }
-
-    &-four {
-        h2 {
-            @extend %fonts-menu-title-four;
-            font-size: $font-size-menu-home-four;
-
-            @media(min-width: $media-middle) {
-                font-size: $font-size-menu-home-four*2;
-            }
-
-            @media(min-width: $media-large) {
-                font-size: $font-size-menu-home-four*3;
-            }
-        }
-    }
-}
 
 
    

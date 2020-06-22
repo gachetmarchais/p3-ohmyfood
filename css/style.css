@@ -109,6 +109,34 @@
   align-items: center;
 }
 
+.legal-notice {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 20px 20px 60px 20px;
+}
+@media (min-width: 455px) {
+  .legal-notice {
+    margin: 20px 40px 100px 40px;
+  }
+}
+@media (min-width: 1170px) {
+  .legal-notice {
+    margin: 20px 60px 120px 60px;
+  }
+}
+.legal-notice h2 {
+  text-align: center;
+}
+.legal-notice ul {
+  padding-left: 0px;
+}
+@media (min-width: 1170px) {
+  .legal-notice ul {
+    padding: 0px 60px 0px 60px;
+  }
+}
+
 /*Menu 1 - nom du restaurant bas de carte*/
 .menu-title-one-bottom {
   display: flex;
@@ -434,19 +462,19 @@
   text-align: right;
 }
 
-.title-page {
+.legal-notice h2, .title-page {
   font-family: "DM Sans", sans-serif;
   letter-spacing: 0px;
   font-weight: 700;
   font-size: 20px;
 }
 @media (min-width: 455px) {
-  .title-page {
+  .legal-notice h2, .title-page {
     font-size: 24px;
   }
 }
 @media (min-width: 1170px) {
-  .title-page {
+  .legal-notice h2, .title-page {
     font-size: 30px;
   }
 }
@@ -722,22 +750,27 @@ body {
   margin-right: 10px;
 }
 
+/*POLICES*/
 .legal-notice {
-  display: block;
-  margin: 20px 40px 60px 40px;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0px;
+}
+.legal-notice span, .legal-notice h3 {
+  font-weight: bolder;
+}
+.legal-notice a {
+  text-decoration: none;
+}
+.legal-notice ul {
+  list-style-type: none;
+  font-size: 14px;
 }
 @media (min-width: 455px) {
-  .legal-notice {
-    margin: 20px 40px 100px 40px;
-  }
-}
-@media (min-width: 1170px) {
-  .legal-notice {
-    margin: 20px 40px 120px 40px;
+  .legal-notice ul {
+    font-size: 16px;
   }
 }
 
-/*POLICES*/
 /*la page home*/
 .menu-title-one h2 {
   font-size: 25px;
