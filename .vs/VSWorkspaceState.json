@@ -1,13 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css",
+    "\\pages",
     "\\sass",
     "\\sass\\Base",
     "\\sass\\Layouts",
     "\\sass\\Pages",
     "\\sass\\Utils"
   ],
-  "SelectedNode": "\\css\\style.css",
+  "SelectedNode": "\\pages\\legal-notice.html",
   "PreviewInSolutionExplorer": false
 }
